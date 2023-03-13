@@ -26,10 +26,15 @@
 .form-control.input-control {
   padding: 0.5rem 0.875rem;
 }
-.form-control.input-control::placeholder {
+.form-control.input-control-password {
+  padding: 0.5rem 2.75rem 0.5rem 0.875rem;
+}
+.form-control.input-control::placeholder,
+.form-control.input-control-password::placeholder {
   color: #a6a6a6;
 }
-.form-control.input-control:focus {
+.form-control.input-control:focus,
+.form-control.input-control-password:focus {
   border-color: #3cb357;
   box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.15);
 }
@@ -37,10 +42,12 @@
   background-color: var(--primary-500);
   border-color: var(--primary-500);
 }
-.form-control.input-control.error {
+.form-control.input-control.error,
+.form-control.input-control-password.error {
   border-color: #dc3545;
 }
-.form-control.input-control.error:focus {
+.form-control.input-control.error:focus,
+.form-control.input-control-password.error:focus {
   box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.15);
 }
 .form-label.forms-label {
@@ -72,6 +79,19 @@ label.error {
   -moz-border-radius: 0.75rem;
   -ms-border-radius: 0.75rem;
   -o-border-radius: 0.75rem;
+}
+
+/* icons */
+#togglePassword {
+  position: absolute;
+  right: 1rem;
+  top: 39px;
+  cursor: pointer;
+}
+#togglePassword svg {
+  z-index: 99;
+  color: rgb(132, 132, 132) !important;
+  font-size: 1rem;
 }
 
 /* LAYOUTS */
