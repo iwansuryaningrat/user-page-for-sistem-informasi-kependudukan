@@ -1,0 +1,9 @@
+1. Home
+- Penjelasan Umum
+- Galeri
+- Pengumuman
+2. Login User
+3. Register User
+4. Daftar Keluarga
+5. Permohonan Administrasi
+6. Pelaporan
