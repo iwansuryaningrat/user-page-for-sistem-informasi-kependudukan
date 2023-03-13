@@ -1,0 +1,119 @@
+/* COMPONENTS */
+/* button */
+.btn-main {
+  background-color: var(--primary-500);
+  color: #fff;
+  border: none;
+  border-radius: 9px;
+  padding: 10px 20px;
+  font-weight: 600;
+  transition: var(--transition-all-300);
+  -webkit-transition: var(--transition-all-300);
+  -moz-transition: var(--transition-all-300);
+  -ms-transition: var(--transition-all-300);
+  -o-transition: var(--transition-all-300);
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  -ms-border-radius: 9px;
+  -o-border-radius: 9px;
+}
+.btn-main:hover {
+  background-color: var(--primary-700);
+  color: #fff;
+}
+
+/* form */
+.form-control.input-control {
+  padding: 0.5rem 0.875rem;
+}
+.form-control.input-control::placeholder {
+  color: #a6a6a6;
+}
+.form-control.input-control:focus {
+  border-color: #3cb357;
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.15);
+}
+.form-check-input:checked {
+  background-color: var(--primary-500);
+  border-color: var(--primary-500);
+}
+.form-control.input-control.error {
+  border-color: #dc3545;
+}
+.form-control.input-control.error:focus {
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.15);
+}
+.form-label.forms-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 0.375rem;
+}
+.form-check-label.forms-check-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+label.error {
+  color: #dc3545;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  margin-top: 0.25rem;
+}
+.form-text.input-text {
+  font-size: 0.8125rem;
+  color: rgb(86, 86, 86);
+}
+
+/* card */
+.sign-card {
+  background-color: var(--primary-100);
+  border-radius: 0.75rem;
+  padding: 2rem;
+  -webkit-border-radius: 0.75rem;
+  -moz-border-radius: 0.75rem;
+  -ms-border-radius: 0.75rem;
+  -o-border-radius: 0.75rem;
+}
+
+/* LAYOUTS */
+/* container */
+.header-container {
+  margin: 8rem 0 5rem;
+}
+.container-space {
+  padding: 4rem 0;
+}
+.sign-container-content {
+  padding: 10rem 2rem 7rem;
+}
+.sign-container-content__card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sign_card__content {
+  width: 100%;
+  max-width: 30rem;
+}
+
+/* footer */
+.big-footer {
+  background: rgba(83, 195, 81, 0.1);
+  padding: 4rem 0 2rem;
+}
+.small-footer {
+  background: rgba(83, 195, 81, 0.1);
+  padding: 1rem 0;
+}
+
+/* navigation */
+.navbar-container {
+  padding: 1.25rem 2rem;
+}
+.navbar.navbar-blur {
+  background: rgba(244, 249, 248, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  -moz-backdrop-filter: blur(10px);
+  -ms-backdrop-filter: blur(10px);
+  -o-backdrop-filter: blur(10px);
+}

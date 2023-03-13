@@ -1,0 +1,23 @@
+/* background */
+.bg-main-500 {
+  background-color: var(--primary-500);
+}
+.bg-main-700 {
+  background-color: var(--primary-700);
+}
+
+/* hover */
+.hover-underline:hover {
+  text-decoration: underline;
+}
+
+/* typography */
+.text-basic {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgb(86, 86, 86);
+}
+.text-sm {
+  font-size: 0.875rem;
+}
