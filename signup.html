@@ -30,6 +30,13 @@
     />
     <link
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
       href="./assets/css/styles.css"
     />
 
@@ -160,7 +167,7 @@
                         </div>
                       </div>
                       <!-- Password -->
-                      <div class="mb-3">
+                      <div class="mb-3 position-relative">
                         <label
                           for="password"
                           class="form-label forms-label"
@@ -174,8 +181,14 @@
                           required
                           placeholder="Masukkan Password"
                           aria-describedby="passwordHelp"
-                          class="form-control input-control"
+                          class="form-control input-control-password"
                         />
+                        <span id="togglePassword"
+                          ><i
+                            class="fa-solid fa-eye"
+                            title="show password"
+                          ></i
+                        ></span>
                         <div
                           id="passwordHelp"
                           class="form-text input-text"
@@ -230,9 +243,9 @@
       <footer class="small-footer">
         <section class="container">
           <p class="text-center m-0">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Consectetur provident deserunt voluptatem nulla et incidunt eligendi
-            quaera❤️.
+            @<span id="yearNow"></span>. Lorem ipsum dolor sit, amet consectetur
+            adipisicing elit. Consectetur provident deserunt voluptatem nulla et
+            incidunt eligendi quaera❤️.
           </p>
         </section>
       </footer>
@@ -261,6 +274,12 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
       integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
       crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js"
+      integrity="sha512-2bMhOkE/ACz21dJT8zBOMgMecNxx0d37NND803ExktKiKdSzdwn+L7i9fdccw/3V06gM/DBWKbYmQvKMdAA9Nw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     ></script>
 
     <script src="./assets/js/scripts.js"></script>
@@ -334,6 +353,16 @@
         $('#signupFormButton').on('click', () => {
           console.log($('#signupForm').valid());
         });
+      });
+
+      // togglePassword
+      $('#togglePassword').click(function () {
+        $(this).children().toggleClass('fa-eye-slash');
+        $(this).children().toggleClass('fa-eye');
+
+        var type =
+          $('#password').attr('type') === 'password' ? 'text' : 'password';
+        $('#password').attr('type', type);
       });
     </script>
   </body>
