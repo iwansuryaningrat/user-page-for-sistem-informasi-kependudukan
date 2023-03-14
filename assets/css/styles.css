@@ -125,6 +125,72 @@
   -webkit-box-orient: vertical;
 }
 
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.5rem;
+}
+.project-card {
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  padding: 2.5rem;
+  transition: var(--transition-all-300);
+  -webkit-transition: var(--transition-all-300);
+  -moz-transition: var(--transition-all-300);
+  -ms-transition: var(--transition-all-300);
+  -o-transition: var(--transition-all-300);
+}
+.project-card:hover {
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  transition: var(--transition-all-300);
+  -webkit-transition: var(--transition-all-300);
+  -moz-transition: var(--transition-all-300);
+  -ms-transition: var(--transition-all-300);
+  -o-transition: var(--transition-all-300);
+}
+.project-badge {
+  padding: 1rem;
+  border-radius: 0.75rem;
+  -webkit-border-radius: 0.75rem;
+  -moz-border-radius: 0.75rem;
+  -ms-border-radius: 0.75rem;
+  -o-border-radius: 0.75rem;
+}
+.project-card:first-child .project-badge {
+  background-color: rgba(29, 78, 224, 0.2);
+}
+.project-card:nth-child(2) .project-badge {
+  background-color: rgba(242, 79, 79, 0.2);
+}
+.project-card:last-child .project-badge {
+  background-color: rgba(255, 229, 0, 0.2);
+}
+.project-badge__icon {
+  font-size: 2rem;
+}
+.project-card:first-child .project-badge svg.project-badge__icon,
+.project-card:first-child .project-badge svg.project-badge__icon path {
+  color: rgba(29, 78, 224, 1);
+  fill: rgba(29, 78, 224, 1);
+}
+.project-card:nth-child(2) .project-badge svg.project-badge__icon,
+.project-card:nth-child(2) .project-badge svg.project-badge__icon path {
+  color: rgba(242, 79, 79, 1);
+  fill: rgba(242, 79, 79, 1);
+}
+.project-card:last-child .project-badge svg.project-badge__icon,
+.project-card:last-child .project-badge svg.project-badge__icon path {
+  color: rgba(255, 229, 0, 1);
+  fill: rgba(255, 229, 0, 1);
+}
+
 /* signin */
 
 /* signout */

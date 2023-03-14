@@ -27,6 +27,34 @@
   color: #fff !important;
 }
 
+.btn-main-outline {
+  background-color: transparent;
+  color: var(--primary-500);
+  border: 1px solid var(--primary-500);
+  border-radius: 9px;
+  padding: 10px 20px;
+  font-weight: 600;
+  transition: var(--transition-all-300);
+  -webkit-transition: var(--transition-all-300);
+  -moz-transition: var(--transition-all-300);
+  -ms-transition: var(--transition-all-300);
+  -o-transition: var(--transition-all-300);
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  -ms-border-radius: 9px;
+  -o-border-radius: 9px;
+}
+.btn-main-outline:hover {
+  border: 1px solid var(--primary-500);
+  background-color: rgba(83, 195, 81, 0.1);
+  color: var(--primary-500);
+}
+.btn-main-outline:focus {
+  background-color: var(--primary-500) !important;
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.2) !important;
+  color: #fff !important;
+}
+
 /* form */
 .form-control.input-control {
   padding: 0.5rem 0.875rem;
