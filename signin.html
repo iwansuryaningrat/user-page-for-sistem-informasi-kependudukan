@@ -88,17 +88,25 @@
                         <label
                           for="email"
                           class="form-label forms-label"
-                          >Email</label
+                          >Email / NIK</label
                         >
                         <input
-                          type="email"
+                          type="text"
                           id="email"
                           name="email"
                           value=""
                           required
-                          placeholder="Masukkan Email"
+                          placeholder="Masukkan Email / NIK"
+                          aria-describedby="emailHelp"
                           class="form-control input-control"
                         />
+                        <div
+                          id="emailHelp"
+                          class="form-text input-text"
+                        >
+                          Gunakan email aktif atau Nomor Induk Kependudukan (No.
+                          KTP).
+                        </div>
                       </div>
                       <div class="mb-3 position-relative">
                         <label
@@ -218,7 +226,6 @@
           rules: {
             email: {
               required: true,
-              email: true,
             },
             password: {
               required: true,
@@ -226,8 +233,7 @@
           },
           messages: {
             email: {
-              required: 'Email tidak boleh kosong.',
-              email: 'Email tidak valid.',
+              required: 'Email atau NIK tidak boleh kosong.',
             },
             password: {
               required: 'Password tidak boleh kosong.',
