@@ -21,6 +21,11 @@
   background-color: var(--primary-700);
   color: #fff;
 }
+.btn-main:focus {
+  background-color: var(--primary-700) !important;
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.2) !important;
+  color: #fff !important;
+}
 
 /* form */
 .form-control.input-control {
