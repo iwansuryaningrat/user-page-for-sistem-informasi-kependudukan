@@ -21,3 +21,27 @@
 .text-sm {
   font-size: 0.875rem;
 }
+.text-main-700 {
+  color: var(--primary-700);
+}
+.text-gray {
+  color: rgba(89, 89, 89, 1);
+}
+
+svg.fill-main-700,
+.fill-main-700 path {
+  color: var(--primary-700) !important;
+  fill: var(--primary-700) !important;
+}
+
+svg.fill-dark,
+.fill-dark path {
+  color: rgba(0, 0, 0, 1);
+  fill: rgba(0, 0, 0, 1);
+}
+
+svg.fill-gray,
+.fill-gray path {
+  color: rgba(89, 89, 89, 1);
+  fill: rgba(89, 89, 89, 1);
+}
