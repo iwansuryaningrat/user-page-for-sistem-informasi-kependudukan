@@ -1,9 +1,24 @@
-1. Home
-- Penjelasan Umum
-- Galeri
-- Pengumuman
-2. Login User
-3. Register User
-4. Daftar Keluarga
-5. Permohonan Administrasi
-6. Pelaporan
+HOMEPAGE
+1. Header [⌛]
+2. Penjelasan Umum [⌛]
+3. Galeri [⌛]
+4. Pengumuman [⌛]
+5. Footer [⌛]
+
+DAFTAR KELUARGA
+1. 🤷
+
+PERMOHONAN ADMINISTRASI
+1. 🤷
+
+PELAPORAN
+1. 🤷
+
+AUTH
+1. Login User [⌛]
+2. Register User [⌛]
+3. Forgot Password[⌛]
+4. Login success
+5. Regist success
+6. Success send to Email
+7. Create new password
