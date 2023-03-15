@@ -21,11 +21,17 @@
 .text-sm {
   font-size: 0.875rem;
 }
+.text-xs {
+  font-size: 0.75rem;
+}
 .text-main-700 {
   color: var(--primary-700);
 }
 .text-gray {
   color: rgba(89, 89, 89, 1);
+}
+.text-gray-200 {
+  color: rgb(186, 186, 186);
 }
 
 svg.fill-main-700,
