@@ -5,6 +5,9 @@
 .bg-main-700 {
   background-color: var(--primary-700);
 }
+.bg-main-500__50 {
+  background-color: rgba(83, 195, 81, 0.5);
+}
 
 /* hover */
 .hover-underline:hover {

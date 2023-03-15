@@ -22,3 +22,21 @@ AUTH
 5. Regist success
 6. Success send to Email
 7. Create new password
+
+nama terlapor Dropdown search
+kategori dropdown
+laporan text
+deskripsi laporan textarea
+
+tabel
+status (abum, biru, ijo) = diterima, dalam proses, selesai
+
+pilih kategori dropdowns
+keperluan text
+desc textarea
+berkas file
+
+tabel
+status (abum, biru, ijo) = diterima, dalam proses, selesai
+berkas => file => bisa di preview
+detail

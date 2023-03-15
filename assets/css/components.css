@@ -147,6 +147,15 @@ label.error {
   width: 100%;
   max-width: 30rem;
 }
+.card-table-container {
+  width: 100%;
+  padding: 1.5rem 0.5rem;
+  border-radius: 0.75rem;
+  -webkit-border-radius: 0.75rem;
+  -moz-border-radius: 0.75rem;
+  -ms-border-radius: 0.75rem;
+  -o-border-radius: 0.75rem;
+}
 
 /* footer */
 .big-footer {
@@ -179,4 +188,19 @@ label.error {
   justify-content: center;
   padding: 6rem 0 3rem;
   flex-direction: column;
+}
+.header-container-dashboard {
+  margin-top: 4rem;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 4rem 0 1rem;
+}
+
+/* table */
+.heading-table tr th {
+  font-size: 0.75rem;
+}
+.body-table tr td {
+  font-size: 0.875rem;
 }
