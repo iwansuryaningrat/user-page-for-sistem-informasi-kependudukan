@@ -8,13 +8,8 @@
       content="width=device-width, initial-scale=1"
     />
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
+    <!-- styles -->
+    <!-- font -->
     <link
       rel="preconnect"
       href="https://fonts.googleapis.com"
@@ -28,6 +23,14 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <!-- fontawesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -35,21 +38,24 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- datatables bootstrap -->
     <link
       rel="stylesheet"
       type="text/css"
       href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap5.min.css"
     />
+    <!-- custom styles -->
     <link
       rel="stylesheet"
       href="./assets/css/styles.css"
     />
 
     <!-- title -->
-    <title>Laporan | Warga Site</title>
+    <title>Menu Pelaporan | Warga Site</title>
   </head>
   <body>
     <div>
+      <!-- navigation -->
       <nav
         class="navbar navbar-expand-lg bg-body-tertiary fixed-top navbar-container"
       >
@@ -140,16 +146,19 @@
           </div>
         </div>
       </nav>
-
+      <!-- end of navigation -->
+      <!-- header -->
       <header class="container px-0">
         <div class="header-container-dashboard">
           <h2 class="mb-3">Selamat Datang di Dashboard Warga</h2>
           <p class="text-basic mb-0">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut natus
-            dolores nam vero ullam.
+            Riwayat pelaporan lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Aut natus dolores nam vero ullam.
           </p>
         </div>
       </header>
+      <!-- end of header -->
+      <!-- main -->
       <main>
         <section class="container container-space pt-3">
           <div class="card-table-container shadow">
@@ -171,6 +180,7 @@
                       <th class="filter-none">Laporan</th>
                       <th>Tanggal Pelaporan</th>
                       <th class="filter-none">Status</th>
+                      <th class="filter-none"></th>
                     </tr>
                   </thead>
                   <tbody class="body-table">
@@ -190,6 +200,36 @@
                           </div>
                         </div>
                       </td>
+                      <td>
+                        <div class="dropdown dropdown-table pe-3">
+                          <button
+                            class="btn dropdown-table-icon"
+                            type="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <i class="fa-solid fa-ellipsis"></i>
+                          </button>
+                          <ul class="dropdown-menu dropdown-menu-table shadow">
+                            <li>
+                              <a
+                                class="dropdown-item dropdown-table-item"
+                                href="./report-form-edit.html"
+                                ><i class="fa-solid fa-pen-to-square me-2"></i
+                                >Edit</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="dropdown-item dropdown-table-item"
+                                href="./report-detail.html"
+                                ><i class="fa-regular fa-folder-open me-2"></i
+                                >Detail</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
                     </tr>
                     <tr>
                       <td>2</td>
@@ -205,6 +245,36 @@
                           <div class="status-badge badge-onproccess">
                             <i class="fa-solid fa-circle"></i>Dalam Proses
                           </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="dropdown dropdown-table pe-3">
+                          <button
+                            class="btn dropdown-table-icon"
+                            type="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <i class="fa-solid fa-ellipsis"></i>
+                          </button>
+                          <ul class="dropdown-menu dropdown-menu-table shadow">
+                            <li>
+                              <a
+                                class="dropdown-item dropdown-table-item"
+                                href="./report-form-edit.html"
+                                ><i class="fa-solid fa-pen-to-square me-2"></i
+                                >Edit</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="dropdown-item dropdown-table-item"
+                                href="./report-detail.html"
+                                ><i class="fa-regular fa-folder-open me-2"></i
+                                >Detail</a
+                              >
+                            </li>
+                          </ul>
                         </div>
                       </td>
                     </tr>
@@ -224,6 +294,36 @@
                           </div>
                         </div>
                       </td>
+                      <td>
+                        <div class="dropdown dropdown-table pe-3">
+                          <button
+                            class="btn dropdown-table-icon"
+                            type="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <i class="fa-solid fa-ellipsis"></i>
+                          </button>
+                          <ul class="dropdown-menu dropdown-menu-table shadow">
+                            <li>
+                              <a
+                                class="dropdown-item dropdown-table-item"
+                                href="./report-form-edit.html"
+                                ><i class="fa-solid fa-pen-to-square me-2"></i
+                                >Edit</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="dropdown-item dropdown-table-item"
+                                href="./report-detail.html"
+                                ><i class="fa-regular fa-folder-open me-2"></i
+                                >Detail</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
                     </tr>
                     <tr>
                       <td>4</td>
@@ -241,6 +341,36 @@
                           </div>
                         </div>
                       </td>
+                      <td>
+                        <div class="dropdown dropdown-table pe-3">
+                          <button
+                            class="btn dropdown-table-icon"
+                            type="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <i class="fa-solid fa-ellipsis"></i>
+                          </button>
+                          <ul class="dropdown-menu dropdown-menu-table shadow">
+                            <li>
+                              <a
+                                class="dropdown-item dropdown-table-item"
+                                href="./report-form-edit.html"
+                                ><i class="fa-solid fa-pen-to-square me-2"></i
+                                >Edit</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="dropdown-item dropdown-table-item"
+                                href="./report-detail.html"
+                                ><i class="fa-regular fa-folder-open me-2"></i
+                                >Detail</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
                     </tr>
                   </tbody>
                 </table>
@@ -249,10 +379,12 @@
           </div>
         </section>
       </main>
-
+      <!-- end of main -->
+      <!-- footer -->
       <footer class="big-footer">
         <section class="container">
           <div class="row">
+            <!-- left -->
             <div class="col-4">
               <h1>Warga</h1>
               <p>
@@ -261,19 +393,23 @@
                 fugiat autem officiis.
               </p>
             </div>
+            <!-- right -->
             <div class="col-8"></div>
           </div>
         </section>
       </footer>
     </div>
+    <!-- end of footer -->
 
     <!-- scripts -->
+    <!-- jquery -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
       integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <!-- jquery validate -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"
       integrity="sha512-37T7leoNS06R80c8Ulq7cdCDU5MNQBwlYoy1TX/WUsLFC2eYNqtKlV0QjH7r8JpG/S0GUMZwebnVFLPd6SU5yg=="
@@ -286,17 +422,20 @@
       integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
       crossorigin="anonymous"
     ></script>
+    <!-- bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
       integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
       crossorigin="anonymous"
     ></script>
+    <!-- fontawesome -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js"
       integrity="sha512-2bMhOkE/ACz21dJT8zBOMgMecNxx0d37NND803ExktKiKdSzdwn+L7i9fdccw/3V06gM/DBWKbYmQvKMdAA9Nw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <!-- datatables -->
     <script
       type="text/javascript"
       src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"
@@ -305,11 +444,13 @@
       type="text/javascript"
       src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"
     ></script>
-
+    <!-- custom script -->
     <script
       type="text/javascript"
       src="./assets/script/scripts.js"
     ></script>
+
+    <!-- script internal -->
     <script>
       $(document).ready(function () {
         // display tables
@@ -324,13 +465,11 @@
           language: {
             searchPlaceholder: 'Cari pelaporan',
             search: '',
-            // edit class
             sLengthMenu: '_MENU_',
             sInfo: 'Menampilkan _START_ - _END_ dari _TOTAL_ data',
             sInfoFiltered: '(dari _MAX_ total data)',
             sInfoEmpty: 'Menampilkan 0 data',
             sZeroRecords: 'Tidak ada data yang sesuai',
-            // change previous and next
             oPaginate: {
               sPrevious: '<i class="fa-solid fa-chevron-left text-sm"></i>',
               sNext: '<i class="fa-solid fa-chevron-right text-sm"></i>',
@@ -346,7 +485,7 @@
 
         // add button create report
         $('#tableReport_wrapper .row:first-child').append(
-          '<div class="col-sm-12 col-md-5"><div class="d-flex justify-content-end pe-2"><a href="./form-report.html" class="btn btn-main-xs" role="button"><i class="fa-solid fa-plus me-2"></i>Buat Laporan</a></div></div>'
+          '<div class="col-sm-12 col-md-5"><div class="d-flex justify-content-end pe-2"><a href="./report-form-add.html" class="btn btn-main-xs" role="button"><i class="fa-solid fa-plus me-2"></i>Buat Laporan</a></div></div>'
         );
 
         // change class of datatable reportTable
