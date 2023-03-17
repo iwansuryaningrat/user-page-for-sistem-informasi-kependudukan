@@ -199,6 +199,15 @@ label.error {
   -ms-border-radius: 0.75rem;
   -o-border-radius: 0.75rem;
 }
+.card-form-container {
+  width: 100%;
+  padding: 0;
+  border-radius: 0.75rem;
+  -webkit-border-radius: 0.75rem;
+  -moz-border-radius: 0.75rem;
+  -ms-border-radius: 0.75rem;
+  -o-border-radius: 0.75rem;
+}
 
 /* footer */
 .big-footer {

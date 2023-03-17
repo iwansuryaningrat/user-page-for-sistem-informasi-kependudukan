@@ -491,3 +491,8 @@
   background-color: rgba(83, 195, 81, 1);
   color: #fff;
 }
+
+/* form report */
+.card-form-container .card-body {
+  padding: 1rem;
+}
