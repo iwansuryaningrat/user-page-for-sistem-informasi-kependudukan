@@ -143,6 +143,15 @@
 
       <header class="container px-0">
         <div class="header-container-dashboard">
+          <div class="mb-3">
+            <button
+              type="button"
+              class="btn btn-main-outline"
+              onclick="goBack()"
+            >
+              Kembali
+            </button>
+          </div>
           <h2 class="mb-3">Selamat Datang di Dashboard Warga</h2>
           <p class="text-basic mb-0">
             Voluptate facere modi provident eum quae fugit quo doloremque nulla
@@ -361,6 +370,11 @@
           console.log($('#reportForm').valid());
         });
       });
+
+      //   onclick back to previous page
+      function goBack() {
+        window.history.back();
+      }
     </script>
   </body>
 </html>
