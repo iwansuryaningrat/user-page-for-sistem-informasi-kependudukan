@@ -447,47 +447,6 @@ Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem et assumenda c
 
     <!-- script internal -->
     <script>
-      // add method validation only letters
-      $.validator.addMethod('alphabetOnly', function (value, element) {
-        return this.optional(element) || value == value.match(/^[A-Za-z\s']+$/);
-      });
-      // validate
-      $(document).ready(function () {
-        $('#adminFormDetail').validate({
-          rules: {
-            kategori: {
-              required: true,
-            },
-            keperluan: {
-              required: true,
-            },
-            deskripsi: {
-              required: true,
-            },
-            berkas: {
-              required: true,
-            },
-          },
-          messages: {
-            kategori: {
-              required: 'Kategori tidak boleh kosong.',
-            },
-            keperluan: {
-              required: 'Laporan tidak boleh kosong.',
-            },
-            deskripsi: {
-              required: 'Deskripsi laporan tidak boleh kosong.',
-            },
-            berkas: {
-              required: 'Berkas tidak boleh kosong.',
-            },
-          },
-        });
-        $('#adminFormDetailButton').on('click', () => {
-          console.log($('#adminFormDetail').valid());
-        });
-      });
-
       //   onclick back to previous page
       function goBack() {
         window.history.back();
