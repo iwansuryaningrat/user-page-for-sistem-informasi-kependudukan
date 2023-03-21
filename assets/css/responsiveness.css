@@ -2,6 +2,16 @@
 @media only screen and (max-width: 1023px) {
 }
 @media only screen and (max-width: 959px) {
+  /* components */
+  /* navigation */
+  .navbar.navbar-blur {
+    background: rgba(244, 249, 248, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    -moz-backdrop-filter: blur(10px);
+    -ms-backdrop-filter: blur(10px);
+    -o-backdrop-filter: blur(10px);
+  }
   /* footer */
   .footer-floor {
     flex-direction: column;
@@ -22,7 +32,8 @@
   }
 }
 @media only screen and (max-width: 575px) {
-  /* general */
+  /* components */
+  /* container */
   .container {
     padding-left: 1.25rem !important;
     padding-right: 1.25rem !important;
@@ -34,10 +45,6 @@
     font-size: 0.875rem;
     margin-bottom: 0.875rem;
   }
-  .container {
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
-  }
   /* components */
   /* button */
   .btn-main,
@@ -48,6 +55,23 @@
     -moz-border-radius: 6px;
     -ms-border-radius: 6px;
     -o-border-radius: 6px;
+  }
+  /* container */
+  .container {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  .sign-container-content {
+    padding: 7rem 1rem 6rem;
+  }
+  /* form */
+  .form-control.input-control,
+  select.form-select.select-control,
+  .form-control.input-control-password {
+    font-size: 0.875rem;
+  }
+  .form-text.input-text {
+    font-size: 0.75rem;
   }
   /* footer */
   .big-footer {
