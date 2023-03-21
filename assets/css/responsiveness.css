@@ -28,6 +28,11 @@
 }
 @media only screen and (max-width: 767px) {
   /* components */
+  /* container */
+  .header-container-mini {
+    padding-bottom: 0;
+  }
+
   /* footer */
   .footer-top__left {
     margin-bottom: 2rem;
