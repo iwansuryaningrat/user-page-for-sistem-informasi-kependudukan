@@ -6,6 +6,12 @@
     grid-gap: 2.25rem 1.75rem;
   }
 }
+@media only screen and (max-width: 991px) {
+  /* etc */
+  .cta-image-wrapper {
+    width: 18rem;
+  }
+}
 @media only screen and (max-width: 959px) {
   /* components */
   /* navigation */
@@ -33,6 +39,14 @@
     padding-bottom: 0;
   }
 
+  /* card */
+  .card-cta-main {
+    padding: 3rem 2.5rem 0;
+  }
+  .card-cta-main .left-cta {
+    padding-bottom: 3rem;
+  }
+
   /* footer */
   .footer-top__left {
     margin-bottom: 2rem;
@@ -45,6 +59,17 @@
   /* etc */
   .sign_card__content .w-90 {
     width: 90%;
+  }
+  .cta-image-wrapper {
+    width: 18rem;
+    position: static;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    inset: unset;
+    margin: 0 auto 2rem;
   }
 }
 @media only screen and (max-width: 639px) {
@@ -120,6 +145,31 @@
   .footer-menu-wrapper ul li {
     font-size: 0.875rem;
   }
+  .footer-floor {
+    padding: 0;
+  }
+
+  /* etc */
+  .card-cta-main {
+    padding: 2.5rem 2rem 0;
+  }
+  .card-cta-main .left-cta {
+    padding-bottom: 2.5rem;
+  }
+  .cta-image-wrapper {
+    width: 16rem;
+    margin: 0 auto 2rem;
+  }
 }
-@media only screen and (max-width: 319px) {
+@media only screen and (max-width: 320px) {
+  /* components */
+  /* card */
+  .sign-card {
+    padding: 1.5rem 1.25rem;
+  }
+  /* etc */
+  .cta-image-wrapper {
+    width: 14rem;
+    margin: 0 auto 1.5rem;
+  }
 }

@@ -9,7 +9,7 @@
   background-color: rgba(83, 195, 81, 0.5);
 }
 .bg-main-500__05 {
-  background-color: rgba(83, 195, 81, 0.05);
+  background-color: rgba(83, 195, 81, 0.07);
 }
 
 /* hover */
@@ -37,6 +37,12 @@
 }
 .text-gray-200 {
   color: rgb(186, 186, 186);
+}
+.line-clamp-1 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 svg.fill-main-700,

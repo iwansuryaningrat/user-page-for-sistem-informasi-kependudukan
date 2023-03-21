@@ -16,6 +16,41 @@
   text-transform: uppercase;
   font-weight: 500;
 }
+.card-cta-main {
+  padding: 3.5rem 3rem 0;
+  border-radius: 1.5rem;
+  -webkit-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
+  -ms-border-radius: 1.5rem;
+  -o-border-radius: 1.5rem;
+  background-color: var(--primary-500);
+  overflow: hidden;
+}
+.card-cta-main .left-cta {
+  padding-bottom: 3.5rem;
+}
+.card-cta-main h3 {
+  color: #fff;
+}
+.card-cta-main p {
+  color: rgb(237, 237, 237);
+}
+.cta-image-wrapper {
+  position: absolute;
+  top: 0;
+  width: 25rem;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  margin: 0;
+}
+.cta-image {
+  width: 100%;
+}
 /* galery */
 .galery-container {
   display: grid;

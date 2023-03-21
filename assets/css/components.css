@@ -35,6 +35,28 @@
   -ms-border-radius: 0.375rem;
   -o-border-radius: 0.375rem;
 }
+.btn-white {
+  background-color: #fff;
+  color: var(--primary-700);
+  border: none;
+  border-radius: 9px;
+  padding: 10px 20px;
+  font-weight: 600;
+  transition: var(--transition-all-300);
+  -webkit-transition: var(--transition-all-300);
+  -moz-transition: var(--transition-all-300);
+  -ms-transition: var(--transition-all-300);
+  -o-transition: var(--transition-all-300);
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  -ms-border-radius: 9px;
+  -o-border-radius: 9px;
+}
+.btn-white:hover {
+  opacity: 0.8;
+  color: var(--primary-700);
+  background-color: #fff;
+}
 .btn-main:hover,
 .btn-main-xs:hover {
   background-color: var(--primary-700);
@@ -45,6 +67,11 @@
   background-color: var(--primary-700) !important;
   box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.2) !important;
   color: #fff !important;
+}
+.btn-white:focus {
+  background-color: #fff !important;
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.4) !important;
+  color: var(--primary-700) !important;
 }
 
 .btn-main-outline {
@@ -287,6 +314,7 @@ footer hr {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0.5rem 0;
 }
 .footer-floor > p {
   font-size: 0.875rem;
