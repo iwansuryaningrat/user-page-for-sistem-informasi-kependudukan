@@ -42,7 +42,7 @@ berkas => file => bisa di preview
 detail
 
 18 Maret
-    halaman profile, fixing content, responsiveness,
+    tampilkan prview photo pada galery page sesuai yang ditampilkan, halaman profile, fixing content, responsiveness,
 19 Maret
     top-assets endpoint, favicon, plans endpoint, sign up watchlist endpoint, blog card, detail blog
 20 Maret
