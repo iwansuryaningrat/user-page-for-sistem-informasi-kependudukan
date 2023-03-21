@@ -111,13 +111,15 @@
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
-  overflow-y: auto;
   visibility: hidden;
   z-index: -1;
   opacity: 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+.galery-item__desc .scroll {
+  overflow: auto;
 }
 
 .news-container {
