@@ -1,5 +1,10 @@
 /* responsive */
 @media only screen and (max-width: 1023px) {
+  /* etc */
+  .news-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2.25rem 1.75rem;
+  }
 }
 @media only screen and (max-width: 959px) {
   /* components */
@@ -37,12 +42,27 @@
     width: 90%;
   }
 }
+@media only screen and (max-width: 639px) {
+  /* etc */
+  .news-image__wrap {
+    height: 12rem;
+  }
+  .news-container {
+    grid-gap: 2rem 1.5rem;
+  }
+}
 @media only screen and (max-width: 575px) {
   /* components */
   /* container */
   .container {
     padding-left: 1.25rem !important;
     padding-right: 1.25rem !important;
+  }
+
+  /* etc */
+  .news-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2.25rem 1.75rem;
   }
 }
 @media only screen and (max-width: 479px) {
