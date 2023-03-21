@@ -8,6 +8,9 @@
 .bg-main-500__50 {
   background-color: rgba(83, 195, 81, 0.5);
 }
+.bg-main-500__05 {
+  background-color: rgba(83, 195, 81, 0.05);
+}
 
 /* hover */
 .hover-underline:hover {
