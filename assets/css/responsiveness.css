@@ -27,6 +27,9 @@
     grid-row: auto;
     grid-column: auto;
   }
+  .project-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
   /* etc */
   .cta-image-wrapper {
     width: 18rem;
@@ -100,6 +103,10 @@
     width: 100%;
     height: 18.75rem;
   }
+  .project-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+  }
 
   /* galery */
   .galery-container {
@@ -165,6 +172,9 @@
   }
   .general-image-wrapper {
     height: 15rem;
+  }
+  .project-card {
+    padding: 2rem 1.5rem;
   }
 
   /* etc */
