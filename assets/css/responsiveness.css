@@ -1,5 +1,13 @@
 /* responsive */
 @media only screen and (max-width: 1023px) {
+  /* homepage */
+  .jumbotron-image-wrapper {
+    width: 52.5rem;
+  }
+  .header-blue-shape {
+    right: -15rem;
+  }
+
   /* etc */
   .news-container {
     grid-template-columns: repeat(2, 1fr);
@@ -10,6 +18,20 @@
   /* homepage */
   .general-image-wrapper {
     width: 25rem;
+  }
+  .jumbotron-image-wrapper {
+    width: 46.5rem;
+    right: -26rem;
+    bottom: -2rem;
+  }
+  .header-green-shape {
+    top: -22.5rem;
+  }
+  .header-blue-shape {
+    right: -18.5rem;
+  }
+  .header-container {
+    margin: 14.25rem 0 5rem;
   }
   /* galery */
   .galery-container {
@@ -106,6 +128,16 @@
   .project-container {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 1rem;
+  }
+  .jumbotron-image-wrapper {
+    display: none;
+  }
+  .header-green-shape {
+    top: -20.5rem;
+    left: -10rem;
+  }
+  .header-container {
+    margin: 12rem 0 3rem;
   }
 
   /* galery */
@@ -244,6 +276,10 @@
   /* homepage */
   .general-image-wrapper {
     height: auto;
+  }
+  .header-blue-shape {
+    right: -14rem;
+    bottom: -2rem;
   }
 
   /* galery */

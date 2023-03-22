@@ -4,6 +4,29 @@
 
 /* PAGES */
 /* home */
+.jumbotron-image-wrapper {
+  position: absolute;
+  right: -24rem;
+  bottom: -4rem;
+  width: 56.5rem;
+}
+.jumbotron-image {
+  width: 100%;
+}
+.header-green-shape {
+  position: absolute;
+  top: -24.5rem;
+  left: -6rem;
+  width: 15rem;
+  z-index: 100;
+}
+.header-blue-shape {
+  position: absolute;
+  bottom: 0;
+  right: -17rem;
+  width: 17rem;
+  z-index: 100;
+}
 .head-badge {
   font-size: 0.75rem;
   padding: 0.5rem 1rem;
@@ -13,6 +36,18 @@
   -ms-border-radius: 9999px;
   -o-border-radius: 9999px;
   background-color: rgba(83, 195, 81, 0.2);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.head-badge-secondaries {
+  font-size: 0.75rem;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  -webkit-border-radius: 9999px;
+  -moz-border-radius: 9999px;
+  -ms-border-radius: 9999px;
+  -o-border-radius: 9999px;
+  background-color: rgba(76, 104, 254, 0.2);
   text-transform: uppercase;
   font-weight: 500;
 }

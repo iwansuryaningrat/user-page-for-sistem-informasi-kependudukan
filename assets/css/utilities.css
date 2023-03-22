@@ -11,6 +11,9 @@
 .bg-main-500__05 {
   background-color: rgba(83, 195, 81, 0.07);
 }
+.bg-secondary-500__05 {
+  background-color: rgba(76, 104, 254, 0.07);
+}
 
 /* hover */
 .hover-underline:hover {
