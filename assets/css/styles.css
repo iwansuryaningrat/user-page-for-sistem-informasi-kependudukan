@@ -51,6 +51,27 @@
 .cta-image {
   width: 100%;
 }
+.general-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.general-image-wrapper {
+  width: 30rem;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  -webkit-border-radius: 0.75rem;
+  -moz-border-radius: 0.75rem;
+  -ms-border-radius: 0.75rem;
+  -o-border-radius: 0.75rem;
+  margin: 0;
+}
+.general-image {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
 /* galery */
 .galery-container {
   display: grid;
