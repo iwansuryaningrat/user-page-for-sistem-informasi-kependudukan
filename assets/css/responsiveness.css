@@ -66,6 +66,16 @@
   .project-container {
     grid-template-columns: repeat(2, 1fr);
   }
+  /* read-news */
+  .related-news-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    grid-gap: 1.5rem;
+  }
+  .divide-related-news {
+    display: block;
+  }
   /* etc */
   .cta-image-wrapper {
     width: 18rem;
@@ -226,6 +236,13 @@
     padding: 2rem 1.5rem;
   }
 
+  /* read-news */
+  .related-news-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0;
+    grid-gap: 0;
+  }
+
   /* etc */
   .news-container {
     grid-template-columns: repeat(1, 1fr);
@@ -323,6 +340,10 @@
     gap: 0.5rem;
   }
 
+  .news-image-container {
+    height: 15rem;
+  }
+
   /* etc */
   .card-cta-main {
     padding: 2.5rem 2rem 0;
@@ -345,5 +366,9 @@
   .cta-image-wrapper {
     width: 14rem;
     margin: 0 auto 1.5rem;
+  }
+
+  .news-image-container {
+    height: 12rem;
   }
 }
