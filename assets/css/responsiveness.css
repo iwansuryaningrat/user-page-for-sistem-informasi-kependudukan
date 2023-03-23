@@ -366,6 +366,10 @@
     width: 16rem;
     margin: 0 auto 2rem;
   }
+  #scroll-to-top .btn.btn-main {
+    bottom: 1.5rem;
+    right: 1.5rem;
+  }
 }
 @media only screen and (max-width: 320px) {
   /* components */
