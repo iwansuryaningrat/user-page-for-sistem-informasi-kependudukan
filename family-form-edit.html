@@ -49,6 +49,10 @@
       rel="stylesheet"
       href="./assets/css/styles.css"
     />
+    <link
+      rel="stylesheet"
+      href="./assets/css/responsiveness.css"
+    />
 
     <!-- favicon -->
     <link
@@ -63,16 +67,20 @@
     <div>
       <!-- navigation -->
       <nav
-        class="navbar navbar-expand-lg bg-body-tertiary fixed-top navbar-container"
+        class="navbar navbar-expand-lg bg-white fixed-top navbar-container navbar-shadow"
       >
         <div class="container-fluid">
+          <!-- brand -->
           <a
             class="navbar-brand fw-bold"
             href="./index.html"
-            >Warga</a
-          >
+            ><img
+              src="./assets/svg/warga-letter-logo.svg"
+              alt="warga-letter-icon"
+          /></a>
+          <!-- toggle mobile navbar -->
           <button
-            class="navbar-toggler"
+            class="navbar-toggler navbar-toggling shadow-none"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -82,69 +90,68 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
+          <!-- link -->
           <div
-            class="collapse navbar-collapse"
+            class="collapse navbar-collapse navbar-collapsing"
             id="navbarSupportedContent"
           >
             <!-- left -->
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
+              <li class="nav-item nav-items dropdown nav-item-dropdown">
                 <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="./index.html"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link"
-                  href="#"
-                  >Link</a
-                >
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
+                  class="nav-link navbar-link dropdown-toggle active"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Dropdown
+                  Warga
                 </a>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu nav-dropdown-menu shadow">
                   <li>
                     <a
-                      class="dropdown-item"
-                      href="#"
-                      >Action</a
+                      class="dropdown-item nav-dropdown-item"
+                      href="./administration.html"
+                      ><span><i class="fa-solid fa-rocket"></i></span
+                      >Administrasi</a
                     >
                   </li>
                   <li>
                     <a
-                      class="dropdown-item"
-                      href="#"
-                      >Another action</a
+                      class="dropdown-item nav-dropdown-item"
+                      href="./report.html"
+                      ><span><i class="fa-solid fa-house-signal"></i></span
+                      >Pelaporan</a
                     >
                   </li>
-                  <li><hr class="dropdown-divider" /></li>
                   <li>
                     <a
-                      class="dropdown-item"
-                      href="#"
-                      >Something else here</a
+                      class="dropdown-item nav-dropdown-item active"
+                      href="./family.html"
+                      ><span><i class="fa-solid fa-seedling"></i></span>Menu
+                      keluarga</a
                     >
                   </li>
                 </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
+              <li class="nav-item nav-items">
+                <a
+                  class="nav-link navbar-link"
+                  href="./galery.html"
+                  >Galeri</a
+                >
+              </li>
+              <li class="nav-item nav-items">
+                <a
+                  class="nav-link navbar-link"
+                  href="./news.html"
+                  >Pengumuman</a
+                >
               </li>
             </ul>
             <!-- right -->
             <a
-              class="btn btn-success"
+              class="btn btn-main-outline-sm w-full-xl"
               role="button"
               href="./signin.html"
               >Masuk</a
@@ -158,11 +165,11 @@
         <div class="header-container-dashboard">
           <div class="mb-3">
             <button
+              class="btn btn-main-outline-xs"
               type="button"
-              class="btn btn-main-outline"
               onclick="goBack()"
             >
-              Kembali
+              <i class="fa-solid fa-arrow-left me-2"></i>Kembali
             </button>
           </div>
           <h2 class="mb-3">Selamat Datang di Dashboard Warga</h2>
@@ -511,22 +518,80 @@
       <!-- footer -->
       <footer class="big-footer">
         <section class="container">
-          <div class="row">
+          <div class="row footer-container-top">
             <!-- left -->
-            <div class="col-4">
-              <h1>Warga</h1>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Dolorum quidem odit quas deleniti laboriosam nobis distinctio
-                fugiat autem officiis.
-              </p>
+            <div class="col-md-4">
+              <div class="footer-top__left">
+                <a
+                  href="./index.html"
+                  class="footer-logo-link"
+                >
+                  <figure class="footer-logo-wrapper">
+                    <img
+                      src="./assets/svg/warga-letter-logo.svg"
+                      alt="warga-letter-icon"
+                    />
+                  </figure>
+                </a>
+                <p class="text-basic">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                  assumenda.<br />
+                  Jl. Raya Kebayoran Lama Bl A-5/194, DKI Jakarta, Kota Jakarta
+                  12240
+                </p>
+                <button
+                  class="btn btn-main"
+                  type="button"
+                >
+                  Kontak Kami
+                </button>
+              </div>
             </div>
             <!-- right -->
-            <div class="col-8"></div>
+            <div class="col-md-8">
+              <div class="footer-menu-link">
+                <div class="footer-menu-wrapper">
+                  <ul class="ps-0 ps-md-5">
+                    <li class="footer-menu__header">Warga</li>
+                    <li><a href="./news.html">Pengumuman</a></li>
+                    <li><a href="./galery.html">Galeri</a></li>
+                  </ul>
+                </div>
+                <div class="footer-menu-wrapper">
+                  <ul class="ps-0 ps-md-5">
+                    <li class="footer-menu__header">Layanan</li>
+                    <li>
+                      <a href="./administration.html">Pengajuan Administrasi</a>
+                    </li>
+                    <li><a href="./report.html">Pelaporan</a></li>
+                    <li><a href="./family.html">Menu Keluarga</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="" />
+          <div class="footer-floor">
+            <p>
+              @<span id="yearNow"></span> Warga | Warga neque consequatur nemo
+              fugit voluptatem mollitia minima tempore.
+            </p>
+            <div class="footer-social-media">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
           </div>
         </section>
       </footer>
       <!-- end of footer -->
+
+      <!-- scroll to top button -->
+      <div id="scroll-to-top">
+        <div class="btn btn-main shadow">
+          <i class="fa-solid fa-arrow-up"></i>
+        </div>
+      </div>
     </div>
 
     <!-- scripts -->
@@ -573,10 +638,7 @@
       src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"
     ></script>
     <!-- custom -->
-    <script
-      type="text/javascript"
-      src="./assets/script/scripts.js"
-    ></script>
+    <script src="./assets/js/scripts.js"></script>
 
     <!-- internal script -->
     <script>
