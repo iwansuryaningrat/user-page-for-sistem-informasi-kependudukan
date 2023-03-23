@@ -148,7 +148,7 @@
 .galery-item__warp:hover .galery-item__desc {
   top: 0;
   visibility: visible;
-  z-index: 999;
+  z-index: 900;
   opacity: 1;
 }
 .galery-item__desc {

@@ -15,6 +15,20 @@
   }
 }
 @media only screen and (max-width: 991px) {
+  /* utilities */
+  .w-full-xl {
+    width: 100%;
+  }
+  .collapse.navbar-collapse.navbar-collapsing {
+    margin-top: 1rem;
+  }
+  .nav-item.nav-items {
+    margin-bottom: 0.5rem;
+  }
+  .navbar-collapse.navbar-collapsing.collapse.show {
+    padding-bottom: 1.5rem;
+  }
+
   /* homepage */
   .general-image-wrapper {
     width: 25rem;
@@ -197,6 +211,9 @@
     padding-left: 1.25rem !important;
     padding-right: 1.25rem !important;
   }
+  .navbar-container {
+    padding: 1rem 1.25rem;
+  }
 
   /* homepage */
   .general-image-container {
@@ -220,6 +237,9 @@
   p {
     font-size: 0.875rem;
     margin-bottom: 0.875rem;
+  }
+  .navbar-container {
+    padding: 0.75rem 0.875rem;
   }
   /* spacing */
   .w-full-sm {
