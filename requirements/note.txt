@@ -1,2 +1,3 @@
 - ✅border tombol back
-- finishing tampilan auth
+- ✅finishing tampilan auth
+- ✅finishing tampilan news
