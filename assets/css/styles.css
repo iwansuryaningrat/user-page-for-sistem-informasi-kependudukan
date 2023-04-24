@@ -323,6 +323,18 @@
 }
 
 /* signin */
+.bg-sign-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(../svg/element-warga.svg); /*Put your image url*/
+  background-size: cover;
+  background-position: top;
+  opacity: 0.35; /*Value from 0.0 to 1.0*/
+}
 
 /* signout */
 
