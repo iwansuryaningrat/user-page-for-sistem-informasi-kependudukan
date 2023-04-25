@@ -41,21 +41,21 @@
     <!-- custom -->
     <link
       rel="stylesheet"
-      href="./assets/css/styles.css"
+      href="../../assets/css/styles.css"
     />
     <link
       rel="stylesheet"
-      href="./assets/css/responsiveness.css"
+      href="../../assets/css/responsiveness.css"
     />
 
     <!-- favicon -->
     <link
       rel="shortcut icon"
-      href="./public/favicon.ico"
+      href="../../public/favicon.ico"
       type="image/x-icon"
     />
     <!-- title -->
-    <title>Ubah Password | Warga Site</title>
+    <title>Masuk | Warga Site</title>
   </head>
   <body>
     <div>
@@ -66,7 +66,7 @@
         <div class="container-fluid">
           <a
             class="navbar-brand fw-bold"
-            href="./index.html"
+            href="../../index.html"
           >
             Warga
           </a>
@@ -77,22 +77,52 @@
       <main>
         <section class="container-fluid">
           <div class="row">
-            <div class="col-md-9 sign-container-content">
-              <div class="sign-container-content__card mb-4">
+            <div class="col-md-9 sign-container-content-big">
+              <div class="sign-container-content__card">
                 <div class="sign_card__content">
-                  <h1 class="text-center mb-3">Ubah Password</h1>
-                  <p class="text-center mb-4 text-basic w-90">
-                    Masukkan kata sandi baru dan konfirmasi kata sandi baru
-                    Anda.
+                  <h1 class="text-center mb-3">Masuk</h1>
+                  <p class="text-center mb-4 text-basic">
+                    Belum memiliki Akun?
+                    <span
+                      ><a
+                        href="javascript:void(0)"
+                        id="register"
+                        class="fw-medium hover-underline"
+                        >Daftar</a
+                      ></span
+                    >
                   </p>
                   <div class="sign-card">
                     <form
-                      id="changePasswordForm"
+                      id="loginForm"
                       action="#"
                       enctype="multipart/form-data"
                       method="POST"
                     >
-                      <!-- Password -->
+                      <div class="mb-3">
+                        <label
+                          for="email"
+                          class="form-label forms-label"
+                          >Email / NIK</label
+                        >
+                        <input
+                          type="text"
+                          id="email"
+                          name="email"
+                          value=""
+                          required
+                          placeholder="Masukkan Email / NIK"
+                          aria-describedby="emailHelp"
+                          class="form-control input-control"
+                        />
+                        <div
+                          id="emailHelp"
+                          class="form-text input-text"
+                        >
+                          Gunakan email aktif atau Nomor Induk Kependudukan (No.
+                          KTP).
+                        </div>
+                      </div>
                       <div class="mb-3 position-relative">
                         <label
                           for="password"
@@ -106,7 +136,6 @@
                           value=""
                           required
                           placeholder="Masukkan Password"
-                          aria-describedby="passwordHelp"
                           class="form-control input-control-password"
                         />
                         <span id="togglePassword"
@@ -115,56 +144,50 @@
                             title="show password"
                           ></i
                         ></span>
-                        <div
-                          id="passwordHelp"
-                          class="form-text input-text"
-                        >
-                          Gunakan minimal 8 karakter dengan kombinasi huruf dan
-                          angka.
-                        </div>
                       </div>
-                      <!-- Confirm Password -->
-                      <div class="mb-4">
-                        <label
-                          for="confirmPassword"
-                          class="form-label forms-label"
-                          >Konfirmasi Password</label
-                        >
-                        <input
-                          type="password"
-                          id="confirmPassword"
-                          name="confirmPassword"
-                          value=""
-                          required
-                          placeholder="Masukkan Konfirmasi Password"
-                          aria-describedby="confirmPasswordHelp"
-                          class="form-control input-control"
-                        />
-                        <div
-                          id="confirmPasswordHelp"
-                          class="form-text input-text"
-                        >
-                          Masukkan password yang sama dengan di atas.
+                      <div
+                        class="mb-4 d-flex align-items-center justify-content-between"
+                      >
+                        <div class="form-check mb-0">
+                          <input
+                            type="checkbox"
+                            class="form-check-input"
+                            id="remember"
+                          />
+                          <label
+                            class="form-check-label forms-check-label line-clamp-1"
+                            for="remember"
+                            >Remember Me</label
+                          >
+                        </div>
+                        <div class="">
+                          <a
+                            href="./forgot-password.html"
+                            class="fw-medium hover-underline text-sm line-clamp-1"
+                            >Lupa Password?</a
+                          >
                         </div>
                       </div>
                       <button
                         type="submit"
                         class="btn btn-main w-100 shadow"
-                        id="changePasswordFormButton"
+                        id="loginFormButton"
                       >
-                        Ubah Password
+                        Login
                       </button>
                     </form>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-md-3 bg-main-700"></div>
+            <div
+              class="col-md-3 bg-main-700 bg-sign-image position-relative"
+            ></div>
           </div>
         </section>
       </main>
       <!-- end of main -->
-      <!-- footer -->
+
       <footer class="small-footer">
         <section class="container">
           <p class="text-center m-0 text-basic">
@@ -173,7 +196,6 @@
           </p>
         </section>
       </footer>
-      <!-- end of footer -->
     </div>
 
     <!-- scripts -->
@@ -211,7 +233,7 @@
       referrerpolicy="no-referrer"
     ></script>
     <!-- custom -->
-    <script src="./assets/js/scripts.js"></script>
+    <script src="../../assets/js/scripts.js"></script>
     <!-- script internal -->
     <script>
       // id register onclick
@@ -221,33 +243,37 @@
 
       // validate
       $(document).ready(function () {
-        $('#changePasswordForm').validate({
+        $('#loginForm').validate({
           rules: {
+            email: {
+              required: true,
+            },
             password: {
               required: true,
-              minlength: 8,
-              pattern: /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/,
-            },
-            confirmPassword: {
-              required: true,
-              equalTo: '#password',
             },
           },
           messages: {
+            email: {
+              required: 'Email atau NIK tidak boleh kosong.',
+            },
             password: {
               required: 'Password tidak boleh kosong.',
-              minlength: 'Password minimal 8 karakter.',
-              pattern: 'Password harus mengandung huruf dan angka.',
-            },
-            confirmPassword: {
-              required: 'Konfirmasi Password tidak boleh kosong.',
-              equalTo: 'Konfirmasi Password harus sama dengan Password.',
             },
           },
         });
-        $('#changePasswordFormButton').on('click', () => {
-          console.log($('#changePasswordForm').valid());
+        $('#loginFormButton').on('click', () => {
+          console.log($('#loginForm').valid());
         });
+      });
+
+      // togglePassword
+      $('#togglePassword').click(function () {
+        $(this).children().toggleClass('fa-eye-slash');
+        $(this).children().toggleClass('fa-eye');
+
+        var type =
+          $('#password').attr('type') === 'password' ? 'text' : 'password';
+        $('#password').attr('type', type);
       });
     </script>
   </body>

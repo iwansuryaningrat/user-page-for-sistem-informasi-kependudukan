@@ -1,56 +1,6 @@
-HOMEPAGE
-1. Header [⌛]
-2. Penjelasan Umum [⌛]
-3. Galeri [⌛]
-4. Pengumuman [⌛]
-5. Footer [⌛]
-
-DAFTAR KELUARGA
-1. 🤷
-
-PERMOHONAN ADMINISTRASI
-1. 🤷
-
-PELAPORAN
-1. 🤷
-
-AUTH
-1. Login User [⌛]
-2. Register User [⌛]
-3. Forgot Password[⌛]
-4. Login success
-5. Regist success
-6. Success send to Email
-7. Create new password
-
-nama terlapor Dropdown search
-kategori dropdown
-laporan text
-deskripsi laporan textarea
-
-tabel
-status (abum, biru, ijo) = diterima, dalam proses, selesai
-
-pilih kategori dropdowns
-keperluan text
-desc textarea
-berkas file
-
-tabel
-status (abum, biru, ijo) = diterima, dalam proses, selesai
-berkas => file => bisa di preview
-detail
-
-18 Maret
-    tampilkan prview photo pada galery page sesuai yang ditampilkan, halaman profile, fixing content, responsiveness,
-19 Maret
-    top-assets endpoint, favicon, plans endpoint, sign up watchlist endpoint, blog card, detail blog
-20 Maret
-    live class card, live class detail
-21 Maret
-    membership profile,
-22 Maret
-    live class transaction, redirect transaction
-23 Maret
-    test
-24 Maret 
+- ✅border tombol back
+- ✅finishing tampilan auth
+- ✅finishing tampilan news
+- ✅finishing tampilan galeri
+- ✅finishing tampilan administration
+- finishing tampilan report

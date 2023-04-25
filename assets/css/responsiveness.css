@@ -292,6 +292,10 @@
   .sign-container-content {
     padding: 7rem 1rem 6rem;
   }
+  /* card */
+  .card-form-body {
+    padding: 0.875rem 1.5rem 0.5rem !important;
+  }
   /* form */
   .form-control.input-control,
   select.form-select.select-control,

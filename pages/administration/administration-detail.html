@@ -47,21 +47,21 @@
     <!-- custom -->
     <link
       rel="stylesheet"
-      href="./assets/css/styles.css"
+      href="../../assets/css/styles.css"
     />
     <link
       rel="stylesheet"
-      href="./assets/css/responsiveness.css"
+      href="../../assets/css/responsiveness.css"
     />
 
     <!-- favicon -->
     <link
       rel="shortcut icon"
-      href="./public/favicon.ico"
+      href="../../public/favicon.ico"
       type="image/x-icon"
     />
     <!-- title -->
-    <title>Form Edit Pengajuan Administrasi | Warga Site</title>
+    <title>Detail Pengajuan Administrasi | Warga Site</title>
   </head>
   <body>
     <div>
@@ -73,9 +73,9 @@
           <!-- brand -->
           <a
             class="navbar-brand fw-bold"
-            href="./index.html"
+            href="../../index.html"
             ><img
-              src="./assets/svg/warga-letter-logo.svg"
+              src="../../assets/svg/warga-letter-logo.svg"
               alt="warga-letter-icon"
           /></a>
           <!-- toggle mobile navbar -->
@@ -137,14 +137,14 @@
               <li class="nav-item nav-items">
                 <a
                   class="nav-link navbar-link"
-                  href="./galery.html"
+                  href="../../galery.html"
                   >Galeri</a
                 >
               </li>
               <li class="nav-item nav-items">
                 <a
                   class="nav-link navbar-link"
-                  href="./news.html"
+                  href="../news/news.html"
                   >Pengumuman</a
                 >
               </li>
@@ -153,7 +153,7 @@
             <a
               class="btn btn-main-outline-sm w-full-xl"
               role="button"
-              href="./signin.html"
+              href="../auth/signin.html"
               >Masuk</a
             >
           </div>
@@ -162,8 +162,8 @@
       <!-- end of navigation -->
       <!-- header -->
       <header class="container px-0">
-        <div class="header-container-dashboard">
-          <div class="mb-3">
+        <div class="header-container-dashboard-form">
+          <div class="mb-4">
             <button
               class="btn btn-main-outline-xs"
               type="button"
@@ -172,63 +172,95 @@
               <i class="fa-solid fa-arrow-left me-2"></i>Kembali
             </button>
           </div>
-          <h2 class="mb-3">Selamat Datang di Dashboard Warga</h2>
-          <p class="text-basic mb-0">
-            Pengajuan permohonan administrasi Voluptate facere modi provident
-            eum quae fugit quo doloremque nulla adipisci.
-          </p>
+          <h3 class="mb-2">Riwayat Pengajuan Administrasi</h3>
         </div>
       </header>
       <!-- end of header -->
       <!-- main -->
       <main>
-        <section class="container container-space pt-3">
+        <section class="container container-space pt-0">
           <form
             class="card-form-container card shadow"
-            id="adminFormEdit"
+            id="adminFormDetail"
             action="#"
             enctype="multipart/form-data"
             method="POST"
           >
-            <div class="card-header">
-              <p class="mb-0">Form Edit Pengajuan Permohonan Administrasi</p>
+            <div class="card-header card-form-header">
+              <p class="mb-0 fw-semibold">
+                Detail Pengajuan Permohonan Administrasi
+              </p>
             </div>
-            <div class="card-form-container card-body">
+            <div class="card-body card-form-body">
               <div>
+                <!-- no surat -->
+                <div class="row mb-3 align-items-center">
+                  <label
+                    for="no_surat"
+                    class="col-md-2 form-label forms-label"
+                    >No Surat <span class="text-important">*</span></label
+                  >
+                  <div class="col-md-10">
+                    <input
+                      type="text"
+                      id="no_surat"
+                      name="no_surat"
+                      class="form-control input-control"
+                      placeholder="Masukkan No Surat"
+                      required
+                      value="0712032023/UNDIP/FSM/IF/RPL"
+                      disabled
+                    />
+                  </div>
+                </div>
+                <!-- nama pemohon -->
+                <div class="row mb-3 align-items-center">
+                  <label
+                    for="nama_pemohon"
+                    class="col-md-2 form-label forms-label"
+                    >Nama Pemohon <span class="text-important">*</span></label
+                  >
+                  <div class="col-md-10">
+                    <input
+                      type="text"
+                      class="form-control input-control"
+                      id="nama_pemohon"
+                      name="nama_pemohon"
+                      value="Nama Pemohon"
+                      disabled
+                    />
+                  </div>
+                </div>
                 <!-- kategori -->
-                <div class="row mb-3">
+                <div class="row mb-3 align-items-center">
                   <label
                     for="kategori"
-                    class="col-sm-2 col-form-label forms-label"
-                    >Kategori</label
+                    class="col-md-2 form-label forms-label"
+                    >Kategori <span class="text-important">*</span></label
                   >
-                  <div class="col-sm-10">
+                  <div class="col-md-10">
                     <select
                       id="kategori"
                       name="kategori"
                       required
                       class="form-select select-control"
+                      disabled
                     >
                       <option value="">Pilih Kategori</option>
                       <option value="1">Kategori 1</option>
-                      <option
-                        value="2"
-                        selected
-                      >
-                        Kategori 2
-                      </option>
+                      <option value="2">Kategori 2</option>
                       <option value="3">Kategori 3</option>
                     </select>
                   </div>
                 </div>
                 <!-- keperluan -->
-                <div class="row mb-3">
+                <div class="row mb-3 align-items-center">
                   <label
                     for="keperluan"
-                    class="col-sm-2 col-form-label forms-label"
-                    >Keperluan</label
+                    class="col-md-2 form-label forms-label"
+                    >Keperluan <span class="text-important">*</span></label
                   >
-                  <div class="col-sm-10">
+                  <div class="col-md-10">
                     <input
                       type="text"
                       id="keperluan"
@@ -236,37 +268,85 @@
                       class="form-control input-control"
                       placeholder="Masukkan Keperluan"
                       required
-                      value="Keperluan Berencana"
+                      disabled
+                      value="Keperluan Bersama"
                     />
                   </div>
                 </div>
-                <!-- deskripsi -->
-                <div class="row mb-3">
+                <!-- status -->
+                <div class="row mb-3 align-items-center">
                   <label
-                    for="deskripsi"
-                    class="col-sm-2 col-form-label forms-label"
-                    >Deskripsi</label
+                    for="status"
+                    class="col-md-2 form-label forms-label"
+                    >Status <span class="text-important">*</span></label
                   >
-                  <div class="col-sm-10">
-                    <textarea
-                      id="deskripsi"
-                      name="deskripsi"
-                      class="form-control input-control"
-                      placeholder="Masukkan Deskripsi"
+                  <div class="col-md-10">
+                    <select
+                      id="status"
+                      name="status"
                       required
+                      class="form-select select-control"
+                      disabled
                     >
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum deserunt ut molestias maiores similique ex maxime itaque officiis. Tenetur, temporibus atque eum pariatur doloribus quasi. Perferendis sed fugiat veritatis nesciunt.</textarea
-                    >
+                      <option value="">Pilih Status</option>
+                      <option
+                        value="1"
+                        selected
+                      >
+                        Diterima
+                      </option>
+                      <option value="2">Ditolak</option>
+                    </select>
+                  </div>
+                </div>
+                <!-- tanggal pengajuan -->
+                <div class="row mb-3 align-items-center">
+                  <label
+                    for="tanggal_pengajuan"
+                    class="col-md-2 form-label forms-label"
+                    >Tanggal Pengajuan
+                    <span class="text-important">*</span></label
+                  >
+                  <div class="col-md-10">
+                    <input
+                      type="date"
+                      id="tanggal_pengajuan"
+                      name="tanggal_pengajuan"
+                      class="form-control input-control"
+                      required
+                      disabled
+                      value="2021-09-01"
+                    />
+                  </div>
+                </div>
+                <!-- tanggal penerimaan -->
+                <div class="row mb-3 align-items-center">
+                  <label
+                    for="tanggal_penerimaan"
+                    class="col-md-2 form-label forms-label"
+                    >Tanggal Penerimaan
+                    <span class="text-important">*</span></label
+                  >
+                  <div class="col-md-10">
+                    <input
+                      type="date"
+                      id="tanggal_penerimaan"
+                      name="tanggal_penerimaan"
+                      class="form-control input-control"
+                      required
+                      disabled
+                      value="2021-09-01"
+                    />
                   </div>
                 </div>
                 <!-- berkas -->
-                <div class="row mb-3">
+                <div class="row mb-3 align-items-center">
                   <label
                     for="berkas"
-                    class="col-sm-2 col-form-label forms-label"
-                    >Berkas</label
+                    class="col-md-2 form-label forms-label"
+                    >Berkas <span class="text-important">*</span></label
                   >
-                  <div class="col-sm-10">
+                  <div class="col-md-10">
                     <input
                       type="file"
                       id="berkas"
@@ -276,18 +356,27 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum deserunt ut mole
                     />
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="card-footer">
-              <div class="w-100 d-flex justify-content-end">
-                <button
-                  type="submit"
-                  form="adminFormEdit"
-                  class="btn btn-main btn-submit"
-                  id="adminFormEditButton"
-                >
-                  Perbarui
-                </button>
+                <!-- deskripsi -->
+                <div class="row mb-3 align-items-center">
+                  <label
+                    for="deskripsi"
+                    class="col-md-2 form-label forms-label"
+                    >Deskripsi <span class="text-important">*</span></label
+                  >
+                  <div class="col-md-10">
+                    <textarea
+                      id="deskripsi"
+                      name="deskripsi"
+                      class="form-control input-control"
+                      placeholder="Masukkan Deskripsi"
+                      required
+                      disabled
+                      rows="3"
+                    >
+Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem et assumenda corporis veritatis? Necessitatibus ullam commodi, iusto nostrum esse numquam officia consectetur, dolor sed, dolore voluptate atque nemo adipisci blanditiis?</textarea
+                    >
+                  </div>
+                </div>
               </div>
             </div>
           </form>
@@ -302,12 +391,12 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum deserunt ut mole
             <div class="col-md-4">
               <div class="footer-top__left">
                 <a
-                  href="./index.html"
+                  href="../../index.html"
                   class="footer-logo-link"
                 >
                   <figure class="footer-logo-wrapper">
                     <img
-                      src="./assets/svg/warga-letter-logo.svg"
+                      src="../../assets/svg/warga-letter-logo.svg"
                       alt="warga-letter-icon"
                     />
                   </figure>
@@ -332,8 +421,8 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum deserunt ut mole
                 <div class="footer-menu-wrapper">
                   <ul class="ps-0 ps-md-5">
                     <li class="footer-menu__header">Warga</li>
-                    <li><a href="./news.html">Pengumuman</a></li>
-                    <li><a href="./galery.html">Galeri</a></li>
+                    <li><a href="../news/news.html">Pengumuman</a></li>
+                    <li><a href="../../galery.html">Galeri</a></li>
                   </ul>
                 </div>
                 <div class="footer-menu-wrapper">
@@ -417,51 +506,10 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum deserunt ut mole
       src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"
     ></script>
     <!-- custom -->
-    <script src="./assets/js/scripts.js"></script>
+    <script src="../../assets/js/scripts.js"></script>
 
     <!-- script internal -->
     <script>
-      // add method validation only letters
-      $.validator.addMethod('alphabetOnly', function (value, element) {
-        return this.optional(element) || value == value.match(/^[A-Za-z\s']+$/);
-      });
-      // validate
-      $(document).ready(function () {
-        $('#adminFormEdit').validate({
-          rules: {
-            kategori: {
-              required: true,
-            },
-            keperluan: {
-              required: true,
-            },
-            deskripsi: {
-              required: true,
-            },
-            berkas: {
-              required: true,
-            },
-          },
-          messages: {
-            kategori: {
-              required: 'Kategori tidak boleh kosong.',
-            },
-            keperluan: {
-              required: 'Laporan tidak boleh kosong.',
-            },
-            deskripsi: {
-              required: 'Deskripsi laporan tidak boleh kosong.',
-            },
-            berkas: {
-              required: 'Berkas tidak boleh kosong.',
-            },
-          },
-        });
-        $('#adminFormEditButton').on('click', () => {
-          console.log($('#adminFormEdit').valid());
-        });
-      });
-
       //   onclick back to previous page
       function goBack() {
         window.history.back();
