@@ -1,3 +1,6 @@
 - ✅border tombol back
 - ✅finishing tampilan auth
 - ✅finishing tampilan news
+- ✅finishing tampilan galeri
+- ✅finishing tampilan administration
+- finishing tampilan report
