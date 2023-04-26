@@ -6,6 +6,6 @@
 - ✅finishing tampilan report
 - ✅finishing tampilan family
 - ✅ubah align-items-center pada form
-- bikin table nowrap
+- ✅bikin table nowrap
 - benerin semua link
 - profile/dashboard user

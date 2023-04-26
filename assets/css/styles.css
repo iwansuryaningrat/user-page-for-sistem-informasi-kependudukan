@@ -389,6 +389,9 @@
 .table-container {
   width: 100%;
 }
+.table-custom thead tr th {
+  white-space: normal;
+}
 .table-custom thead tr th:first-child {
   background-color: rgba(83, 195, 81, 0.15);
   border-radius: 0.375rem 0 0 0.375rem;
