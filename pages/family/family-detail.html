@@ -47,17 +47,17 @@
     <!-- custom -->
     <link
       rel="stylesheet"
-      href="./assets/css/styles.css"
+      href="../../assets/css/styles.css"
     />
     <link
       rel="stylesheet"
-      href="./assets/css/responsiveness.css"
+      href="../../assets/css/responsiveness.css"
     />
 
     <!-- favicon -->
     <link
       rel="shortcut icon"
-      href="./public/favicon.ico"
+      href="../../public/favicon.ico"
       type="image/x-icon"
     />
     <!-- title -->
@@ -73,9 +73,9 @@
           <!-- brand -->
           <a
             class="navbar-brand fw-bold"
-            href="./index.html"
+            href="../../index.html"
             ><img
-              src="./assets/svg/warga-letter-logo.svg"
+              src="../../assets/svg/warga-letter-logo.svg"
               alt="warga-letter-icon"
           /></a>
           <!-- toggle mobile navbar -->
@@ -111,7 +111,7 @@
                   <li>
                     <a
                       class="dropdown-item nav-dropdown-item"
-                      href="./administration.html"
+                      href="../administration/administration.html"
                       ><span><i class="fa-solid fa-rocket"></i></span
                       >Administrasi</a
                     >
@@ -119,7 +119,7 @@
                   <li>
                     <a
                       class="dropdown-item nav-dropdown-item"
-                      href="./report.html"
+                      href="../report/report.html"
                       ><span><i class="fa-solid fa-house-signal"></i></span
                       >Pelaporan</a
                     >
@@ -137,14 +137,14 @@
               <li class="nav-item nav-items">
                 <a
                   class="nav-link navbar-link"
-                  href="./galery.html"
+                  href="../../galery.html"
                   >Galeri</a
                 >
               </li>
               <li class="nav-item nav-items">
                 <a
                   class="nav-link navbar-link"
-                  href="./news.html"
+                  href="../news/news.html"
                   >Pengumuman</a
                 >
               </li>
@@ -153,7 +153,7 @@
             <a
               class="btn btn-main-outline-sm w-full-xl"
               role="button"
-              href="./signin.html"
+              href="../auth/signin.html"
               >Masuk</a
             >
           </div>
@@ -162,8 +162,8 @@
       <!-- end of navigation -->
       <!-- header -->
       <header class="container px-0">
-        <div class="header-container-dashboard">
-          <div class="mb-3">
+        <div class="header-container-dashboard-form">
+          <div class="mb-4">
             <button
               class="btn btn-main-outline-xs"
               type="button"
@@ -172,57 +172,33 @@
               <i class="fa-solid fa-arrow-left me-2"></i>Kembali
             </button>
           </div>
-          <h2 class="mb-3">Selamat Datang di Dashboard Warga</h2>
-          <p class="text-basic mb-0">
-            Voluptate facere modi provident eum quae fugit quo doloremque nulla
-            adipisci.
-          </p>
+          <h3 class="mb-2">Anggota Keluarga</h3>
         </div>
       </header>
       <!-- end of header -->
       <!-- main -->
       <main>
-        <section class="container container-space pt-3">
+        <section class="container container-space pt-0">
           <form
-            class="card-form-container card shadow"
+            class="card-form-container card"
             id="familyFormDetail"
             action="#"
             enctype="multipart/form-data"
             method="POST"
           >
-            <div class="card-header">
-              <p class="mb-0">Detail Keluarga</p>
+            <div class="card-header card-form-header">
+              <p class="mb-0 fw-semibold">Detail Keluarga</p>
             </div>
-            <div class="card-form-container card-body">
+            <div class="card-body card-form-body">
               <div>
-                <!-- nik -->
-                <div class="row mb-3">
-                  <label
-                    for="nik"
-                    class="col-sm-2 col-form-label forms-label"
-                    >NIK</label
-                  >
-                  <div class="col-sm-10">
-                    <input
-                      type="text"
-                      class="form-control input-control"
-                      id="nik"
-                      name="nik"
-                      required
-                      placeholder="Masukkan NIK"
-                      value="1234567890123456"
-                      disabled
-                    />
-                  </div>
-                </div>
                 <!-- nama -->
                 <div class="row mb-3">
                   <label
                     for="nama"
-                    class="col-sm-2 col-form-label forms-label"
-                    >Nama</label
+                    class="col-md-2 form-label forms-label mt-md-2"
+                    >Nama <span class="text-important">*</span></label
                   >
-                  <div class="col-sm-10">
+                  <div class="col-md-10">
                     <input
                       type="text"
                       class="form-control input-control"
@@ -235,41 +211,34 @@
                     />
                   </div>
                 </div>
-                <!-- status -->
+                <!-- nik -->
                 <div class="row mb-3">
                   <label
-                    for="status"
-                    class="col-sm-2 col-form-label forms-label"
-                    >Status</label
+                    for="nik"
+                    class="col-md-2 form-label forms-label mt-md-2"
+                    >NIK <span class="text-important">*</span></label
                   >
-                  <div class="col-sm-10">
-                    <select
-                      id="status"
-                      name="status"
+                  <div class="col-md-10">
+                    <input
+                      type="text"
+                      class="form-control input-control"
+                      id="nik"
+                      name="nik"
                       required
-                      class="form-select select-control"
+                      placeholder="Masukkan NIK"
+                      value="1234567890123456"
                       disabled
-                    >
-                      <option value="">Pilih Status</option>
-                      <option value="1">Status 1</option>
-                      <option
-                        value="2"
-                        selected
-                      >
-                        Status 2
-                      </option>
-                      <option value="3">Status 3</option>
-                    </select>
+                    />
                   </div>
                 </div>
                 <!-- jenis kelamin -->
                 <div class="row mb-3">
                   <label
                     for="jenis_kelamin"
-                    class="col-sm-2 col-form-label forms-label"
-                    >Jenis Kelamin</label
+                    class="col-md-2 form-label forms-label mt-md-2"
+                    >Jenis Kelamin <span class="text-important">*</span></label
                   >
-                  <div class="col-sm-10">
+                  <div class="col-md-10">
                     <input
                       type="text"
                       class="form-control input-control"
@@ -286,10 +255,10 @@
                 <div class="row mb-3">
                   <label
                     for="tempat_lahir"
-                    class="col-sm-2 col-form-label forms-label"
-                    >Tempat Lahir</label
+                    class="col-md-2 form-label forms-label mt-md-2"
+                    >Tempat Lahir <span class="text-important">*</span></label
                   >
-                  <div class="col-sm-10">
+                  <div class="col-md-10">
                     <input
                       type="text"
                       class="form-control input-control"
@@ -306,10 +275,10 @@
                 <div class="row mb-3">
                   <label
                     for="tanggal_lahir"
-                    class="col-sm-2 col-form-label forms-label"
-                    >Tanggal Lahir</label
+                    class="col-md-2 form-label forms-label mt-md-2"
+                    >Tanggal Lahir <span class="text-important">*</span></label
                   >
-                  <div class="col-sm-10">
+                  <div class="col-md-10">
                     <input
                       type="date"
                       class="form-control input-control"
@@ -325,10 +294,11 @@
                 <div class="row mb-3">
                   <label
                     for="status_perkawinan"
-                    class="col-sm-2 col-form-label forms-label"
-                    >Status Perkawinan</label
+                    class="col-md-2 form-label forms-label mt-md-2"
+                    >Status Perkawinan
+                    <span class="text-important">*</span></label
                   >
-                  <div class="col-sm-10">
+                  <div class="col-md-10">
                     <select
                       id="status_perkawinan"
                       name="status_perkawinan"
@@ -352,10 +322,11 @@
                 <div class="row mb-3">
                   <label
                     for="hubungan_keluarga"
-                    class="col-sm-2 col-form-label forms-label"
-                    >Status Hubungan Keluarga</label
+                    class="col-md-2 form-label forms-label mt-md-2"
+                    >Status Hubungan Keluarga
+                    <span class="text-important">*</span></label
                   >
-                  <div class="col-sm-10">
+                  <div class="col-md-10">
                     <select
                       id="hubungan_keluarga"
                       name="hubungan_keluarga"
@@ -381,10 +352,10 @@
                 <div class="row mb-3">
                   <label
                     for="agama"
-                    class="col-sm-2 col-form-label forms-label"
-                    >Agama</label
+                    class="col-md-2 form-label forms-label mt-md-2"
+                    >Agama <span class="text-important">*</span></label
                   >
-                  <div class="col-sm-10">
+                  <div class="col-md-10">
                     <select
                       id="agama"
                       name="agama"
@@ -408,10 +379,10 @@
                 <div class="row mb-3">
                   <label
                     for="pendidikan"
-                    class="col-sm-2 col-form-label forms-label"
-                    >Pendidikan</label
+                    class="col-md-2 form-label forms-label mt-md-2"
+                    >Pendidikan <span class="text-important">*</span></label
                   >
-                  <div class="col-sm-10">
+                  <div class="col-md-10">
                     <select
                       id="pendidikan"
                       name="pendidikan"
@@ -435,10 +406,10 @@
                 <div class="row mb-3">
                   <label
                     for="pekerjaan"
-                    class="col-sm-2 col-form-label forms-label"
-                    >Pekerjaan</label
+                    class="col-md-2 form-label forms-label mt-md-2"
+                    >Pekerjaan <span class="text-important">*</span></label
                   >
-                  <div class="col-sm-10">
+                  <div class="col-md-10">
                     <select
                       id="pekerjaan"
                       name="pekerjaan"
@@ -462,10 +433,10 @@
                 <div class="row mb-3">
                   <label
                     for="no_hp"
-                    class="col-sm-2 col-form-label forms-label"
-                    >No. HP</label
+                    class="col-md-2 form-label forms-label mt-md-2"
+                    >No. HP <span class="text-important">*</span></label
                   >
-                  <div class="col-sm-10">
+                  <div class="col-md-10">
                     <input
                       type="text"
                       class="form-control input-control"
@@ -482,10 +453,10 @@
                 <div class="row mb-3">
                   <label
                     for="email"
-                    class="col-sm-2 col-form-label forms-label"
-                    >Email</label
+                    class="col-md-2 form-label forms-label mt-md-2"
+                    >Email <span class="text-important">*</span></label
                   >
-                  <div class="col-sm-10">
+                  <div class="col-md-10">
                     <input
                       type="email"
                       class="form-control input-control"
@@ -502,10 +473,10 @@
                 <div class="row mb-3">
                   <label
                     for="foto"
-                    class="col-sm-2 col-form-label forms-label"
-                    >Foto</label
+                    class="col-md-2 form-label forms-label mt-md-2"
+                    >Foto <span class="text-important">*</span></label
                   >
-                  <div class="col-sm-10">
+                  <div class="col-md-10">
                     <input
                       type="file"
                       class="form-control input-control"
@@ -529,12 +500,12 @@
             <div class="col-md-4">
               <div class="footer-top__left">
                 <a
-                  href="./index.html"
+                  href="../../index.html"
                   class="footer-logo-link"
                 >
                   <figure class="footer-logo-wrapper">
                     <img
-                      src="./assets/svg/warga-letter-logo.svg"
+                      src="../../assets/svg/warga-letter-logo.svg"
                       alt="warga-letter-icon"
                     />
                   </figure>
@@ -559,17 +530,19 @@
                 <div class="footer-menu-wrapper">
                   <ul class="ps-0 ps-md-5">
                     <li class="footer-menu__header">Warga</li>
-                    <li><a href="./news.html">Pengumuman</a></li>
-                    <li><a href="./galery.html">Galeri</a></li>
+                    <li><a href="../news/news.html">Pengumuman</a></li>
+                    <li><a href="../../galery.html">Galeri</a></li>
                   </ul>
                 </div>
                 <div class="footer-menu-wrapper">
                   <ul class="ps-0 ps-md-5">
                     <li class="footer-menu__header">Layanan</li>
                     <li>
-                      <a href="./administration.html">Pengajuan Administrasi</a>
+                      <a href="../administration/administration.html"
+                        >Pengajuan Administrasi</a
+                      >
                     </li>
-                    <li><a href="./report.html">Pelaporan</a></li>
+                    <li><a href="../report/report.html">Pelaporan</a></li>
                     <li><a href="./family.html">Menu Keluarga</a></li>
                   </ul>
                 </div>
@@ -644,7 +617,7 @@
       src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"
     ></script>
     <!-- custom -->
-    <script src="./assets/js/scripts.js"></script>
+    <script src="../../assets/js/scripts.js"></script>
 
     <!-- internal script -->
     <script>

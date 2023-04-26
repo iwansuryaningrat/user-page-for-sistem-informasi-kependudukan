@@ -47,17 +47,17 @@
     <!-- custom -->
     <link
       rel="stylesheet"
-      href="./assets/css/styles.css"
+      href="../../assets/css/styles.css"
     />
     <link
       rel="stylesheet"
-      href="./assets/css/responsiveness.css"
+      href="../../assets/css/responsiveness.css"
     />
 
     <!-- favicon -->
     <link
       rel="shortcut icon"
-      href="./public/favicon.ico"
+      href="../../public/favicon.ico"
       type="image/x-icon"
     />
     <!-- title -->
@@ -73,9 +73,9 @@
           <!-- brand -->
           <a
             class="navbar-brand fw-bold"
-            href="./index.html"
+            href="../../index.html"
             ><img
-              src="./assets/svg/warga-letter-logo.svg"
+              src="../../assets/svg/warga-letter-logo.svg"
               alt="warga-letter-icon"
           /></a>
           <!-- toggle mobile navbar -->
@@ -111,7 +111,7 @@
                   <li>
                     <a
                       class="dropdown-item nav-dropdown-item"
-                      href="./administration.html"
+                      href="../administration/administration.html"
                       ><span><i class="fa-solid fa-rocket"></i></span
                       >Administrasi</a
                     >
@@ -119,7 +119,7 @@
                   <li>
                     <a
                       class="dropdown-item nav-dropdown-item"
-                      href="./report.html"
+                      href="../report/report.html"
                       ><span><i class="fa-solid fa-house-signal"></i></span
                       >Pelaporan</a
                     >
@@ -137,14 +137,14 @@
               <li class="nav-item nav-items">
                 <a
                   class="nav-link navbar-link"
-                  href="./galery.html"
+                  href="../../galery.html"
                   >Galeri</a
                 >
               </li>
               <li class="nav-item nav-items">
                 <a
                   class="nav-link navbar-link"
-                  href="./news.html"
+                  href="../news/news.html"
                   >Pengumuman</a
                 >
               </li>
@@ -153,7 +153,7 @@
             <a
               class="btn btn-main-outline-sm w-full-xl"
               role="button"
-              href="./signin.html"
+              href="../auth/signin.html"
               >Masuk</a
             >
           </div>
@@ -163,17 +163,13 @@
       <!-- header -->
       <header class="container px-0">
         <div class="header-container-dashboard">
-          <h2 class="mb-3">Selamat Datang di Dashboard Warga</h2>
-          <p class="text-basic mb-0">
-            Daftar anggota keluarga oluptate facere modi provident eum quae
-            fugit quo doloremque nulla adipisci.
-          </p>
+          <h3 class="mb-2">Daftar Anggota Keluarga</h3>
         </div>
       </header>
       <!-- end of header -->
       <!-- main -->
       <main>
-        <section class="container container-space pt-3">
+        <section class="container container-space pt-0">
           <div class="card-table-container shadow">
             <!-- table -->
             <div class="table-container">
@@ -377,12 +373,12 @@
             <div class="col-md-4">
               <div class="footer-top__left">
                 <a
-                  href="./index.html"
+                  href="../../index.html"
                   class="footer-logo-link"
                 >
                   <figure class="footer-logo-wrapper">
                     <img
-                      src="./assets/svg/warga-letter-logo.svg"
+                      src="../../assets/svg/warga-letter-logo.svg"
                       alt="warga-letter-icon"
                     />
                   </figure>
@@ -407,17 +403,19 @@
                 <div class="footer-menu-wrapper">
                   <ul class="ps-0 ps-md-5">
                     <li class="footer-menu__header">Warga</li>
-                    <li><a href="./news.html">Pengumuman</a></li>
-                    <li><a href="./galery.html">Galeri</a></li>
+                    <li><a href="../news/news.html">Pengumuman</a></li>
+                    <li><a href="../../galery.html">Galeri</a></li>
                   </ul>
                 </div>
                 <div class="footer-menu-wrapper">
                   <ul class="ps-0 ps-md-5">
                     <li class="footer-menu__header">Layanan</li>
                     <li>
-                      <a href="./administration.html">Pengajuan Administrasi</a>
+                      <a href="../administration/administration.html"
+                        >Pengajuan Administrasi</a
+                      >
                     </li>
-                    <li><a href="./report.html">Pelaporan</a></li>
+                    <li><a href="../report/report.html">Pelaporan</a></li>
                     <li><a href="./family.html">Menu Keluarga</a></li>
                   </ul>
                 </div>
@@ -491,7 +489,7 @@
       src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"
     ></script>
     <!-- custom -->
-    <script src="./assets/js/scripts.js"></script>
+    <script src="../../assets/js/scripts.js"></script>
 
     <!-- script internal -->
     <script>
@@ -521,14 +519,14 @@
           lengthMenu: [5, 10, 25, 50, 100],
           pageLength: 10, // default page length
           dom:
-            "<'row pb-2'<'col-12 col-md-5 mb-3 mb-md-0'f><'col-12 col-sm-6 col-md-2 pl-md-0 mb-3 mb-sm-0'l>>" +
+            "<'row pb-2'<'col-12 col-md-5 mb-3 mb-md-0'f><'col-6 col-md-2 pl-md-0 mb-3 mb-sm-0'l>>" +
             "<'row'<'col-sm-12'tr>>" +
             "<'row pt-2'<'col-sm-12 col-md-5 info-table mb-3 mb-md-0'i><'col-sm-12 col-md-7'p>>",
         });
 
         // add button create report
         $('#tableFamily_wrapper .row:first-child').append(
-          '<div class="col-12 col-sm-6 col-md-5"><div class="d-flex justify-content-end pe-2"><a href="./family-form-add.html" class="btn btn-main-xs w-full-md" role="button"><i class="fa-solid fa-plus me-2"></i>Tambah Keluarga</a></div></div>'
+          '<div class="col-6 col-md-5"><div class="d-flex justify-content-end pe-2"><a href="./family-form-add.html" class="btn btn-main-xs w-full-md" role="button" style="height: 36px;"><i class="fa-solid fa-plus me-2"></i>Tambah Keluarga</a></div></div>'
         );
 
         // change class of datatable familyTable
