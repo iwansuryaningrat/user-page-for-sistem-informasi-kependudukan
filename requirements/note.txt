@@ -3,4 +3,9 @@
 - ✅finishing tampilan news
 - ✅finishing tampilan galeri
 - ✅finishing tampilan administration
-- finishing tampilan report
+- ✅finishing tampilan report
+- ✅finishing tampilan family
+- ✅ubah align-items-center pada form
+- ✅bikin table nowrap
+- benerin semua link
+- profile/dashboard user

@@ -47,17 +47,17 @@
     <!-- custom -->
     <link
       rel="stylesheet"
-      href="./assets/css/styles.css"
+      href="../../assets/css/styles.css"
     />
     <link
       rel="stylesheet"
-      href="./assets/css/responsiveness.css"
+      href="../../assets/css/responsiveness.css"
     />
 
     <!-- favicon -->
     <link
       rel="shortcut icon"
-      href="./public/favicon.ico"
+      href="../../public/favicon.ico"
       type="image/x-icon"
     />
     <!-- title -->
@@ -73,9 +73,9 @@
           <!-- brand -->
           <a
             class="navbar-brand fw-bold"
-            href="./index.html"
+            href="../../index.html"
             ><img
-              src="./assets/svg/warga-letter-logo.svg"
+              src="../../assets/svg/warga-letter-logo.svg"
               alt="warga-letter-icon"
           /></a>
           <!-- toggle mobile navbar -->
@@ -111,7 +111,7 @@
                   <li>
                     <a
                       class="dropdown-item nav-dropdown-item"
-                      href="./administration.html"
+                      href="../administration/administration.html"
                       ><span><i class="fa-solid fa-rocket"></i></span
                       >Administrasi</a
                     >
@@ -137,14 +137,14 @@
               <li class="nav-item nav-items">
                 <a
                   class="nav-link navbar-link"
-                  href="./galery.html"
+                  href="../../galery.html"
                   >Galeri</a
                 >
               </li>
               <li class="nav-item nav-items">
                 <a
                   class="nav-link navbar-link"
-                  href="./news.html"
+                  href="../news/news.html"
                   >Pengumuman</a
                 >
               </li>
@@ -153,7 +153,7 @@
             <a
               class="btn btn-main-outline-sm w-full-xl"
               role="button"
-              href="./signin.html"
+              href="../auth/signin.html"
               >Masuk</a
             >
           </div>
@@ -162,8 +162,8 @@
       <!-- end of navigation -->
       <!-- header -->
       <header class="container px-0">
-        <div class="header-container-dashboard">
-          <div class="mb-3">
+        <div class="header-container-dashboard-form">
+          <div class="mb-4">
             <button
               class="btn btn-main-outline-xs"
               type="button"
@@ -172,42 +172,38 @@
               <i class="fa-solid fa-arrow-left me-2"></i>Kembali
             </button>
           </div>
-          <h2 class="mb-3">Selamat Datang di Dashboard Warga</h2>
-          <p class="text-basic mb-0">
-            Voluptate facere modi provident eum quae fugit quo doloremque nulla
-            adipisci.
-          </p>
+          <h3 class="mb-2">Riwayat Pelaporan</h3>
         </div>
       </header>
       <!-- end of header -->
       <!-- main -->
       <main>
-        <section class="container container-space pt-3">
+        <section class="container container-space pt-0">
           <form
-            class="card-form-container card shadow"
+            class="card-form-container card"
             id="reportFormDetail"
             action="#"
             enctype="multipart/form-data"
             method="POST"
           >
             <!-- header -->
-            <div class="card-header">
-              <p class="mb-0">Detail Pelaporan</p>
+            <div class="card-header card-form-header">
+              <p class="mb-0 fw-semibold">Detail Pelaporan</p>
             </div>
             <!-- main -->
-            <div class="card-form-container card-body">
+            <div class="card-body card-form-body">
               <div>
                 <!-- nama pelapor -->
                 <div class="row mb-3">
                   <label
                     for="nama_pelapor"
-                    class="col-sm-2 col-form-label forms-label"
-                    >Nama Pelapor</label
+                    class="col-md-2 form-label forms-label mt-md-2"
+                    >Nama Pelapor <span class="text-important">*</span></label
                   >
-                  <div class="col-sm-10">
+                  <div class="col-md-10">
                     <input
                       type="text"
-                      class="form-control"
+                      class="form-control input-control"
                       id="nama_pelapor"
                       name="nama_pelapor"
                       value="Nama Pelapor"
@@ -219,13 +215,13 @@
                 <div class="row mb-3">
                   <label
                     for="nik_pelapor"
-                    class="col-sm-2 col-form-label forms-label"
-                    >NIK Pelapor</label
+                    class="col-md-2 form-label forms-label mt-md-2"
+                    >NIK Pelapor <span class="text-important">*</span></label
                   >
-                  <div class="col-sm-10">
+                  <div class="col-md-10">
                     <input
                       type="text"
-                      class="form-control"
+                      class="form-control input-control"
                       id="nik_pelapor"
                       name="nik_pelapor"
                       value="1234567890123456"
@@ -237,10 +233,10 @@
                 <div class="row mb-3">
                   <label
                     for="nama_terlapor"
-                    class="col-sm-2 col-form-label forms-label"
-                    >Nama Terlapor</label
+                    class="col-md-2 form-label forms-label mt-md-2"
+                    >Nama Terlapor <span class="text-important">*</span></label
                   >
-                  <div class="col-sm-10">
+                  <div class="col-md-10">
                     <select
                       id="nama_terlapor"
                       name="nama_terlapor"
@@ -264,13 +260,13 @@
                 <div class="row mb-3">
                   <label
                     for="nik_terlapor"
-                    class="col-sm-2 col-form-label forms-label"
-                    >NIK Terlapor</label
+                    class="col-md-2 form-label forms-label mt-md-2"
+                    >NIK Terlapor <span class="text-important">*</span></label
                   >
-                  <div class="col-sm-10">
+                  <div class="col-md-10">
                     <input
                       type="text"
-                      class="form-control"
+                      class="form-control input-control"
                       id="nik_terlapor"
                       name="nik_terlapor"
                       value="1234567890123456"
@@ -282,10 +278,10 @@
                 <div class="row mb-3">
                   <label
                     for="kategori"
-                    class="col-sm-2 col-form-label forms-label"
-                    >Kategori</label
+                    class="col-md-2 form-label forms-label mt-md-2"
+                    >Kategori <span class="text-important">*</span></label
                   >
-                  <div class="col-sm-10">
+                  <div class="col-md-10">
                     <select
                       id="kategori"
                       name="kategori"
@@ -309,10 +305,10 @@
                 <div class="row mb-3">
                   <label
                     for="laporan"
-                    class="col-sm-2 col-form-label forms-label"
-                    >Laporan</label
+                    class="col-md-2 form-label forms-label mt-md-2"
+                    >Laporan <span class="text-important">*</span></label
                   >
-                  <div class="col-sm-10">
+                  <div class="col-md-10">
                     <input
                       type="text"
                       id="laporan"
@@ -325,35 +321,15 @@
                     />
                   </div>
                 </div>
-                <!-- deskripsi laporan -->
-                <div class="row mb-3">
-                  <label
-                    for="deskripsi_laporan"
-                    class="col-sm-2 col-form-label forms-label"
-                    >Deskripsi Laporan</label
-                  >
-                  <div class="col-sm-10">
-                    <textarea
-                      id="deskripsi_laporan"
-                      name="deskripsi_laporan"
-                      class="form-control input-control"
-                      placeholder="Masukkan Deskripsi Laporan"
-                      required
-                      rows="4"
-                      disabled
-                    >
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis itaque odit omnis dolorum voluptates necessitatibus, velit est. Voluptatibus, doloremque molestias ducimus qui, est aliquam aspernatur doloribus iure eveniet facilis repudiandae!</textarea
-                    >
-                  </div>
-                </div>
                 <!-- tanggal pelaporan -->
                 <div class="row mb-3">
                   <label
                     for="tanggal_pelaporan"
-                    class="col-sm-2 col-form-label forms-label"
-                    >Tanggal Pelaporan</label
+                    class="col-md-2 form-label forms-label mt-md-2"
+                    >Tanggal Pelaporan
+                    <span class="text-important">*</span></label
                   >
-                  <div class="col-sm-10">
+                  <div class="col-md-10">
                     <input
                       type="date"
                       id="tanggal_pelaporan"
@@ -369,10 +345,10 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis itaque odit o
                 <div class="row mb-3">
                   <label
                     for="status"
-                    class="col-sm-2 col-form-label forms-label"
-                    >Status</label
+                    class="col-md-2 form-label forms-label mt-md-2"
+                    >Status <span class="text-important">*</span></label
                   >
-                  <div class="col-sm-10">
+                  <div class="col-md-10">
                     <select
                       id="status"
                       name="status"
@@ -392,6 +368,28 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis itaque odit o
                     </select>
                   </div>
                 </div>
+                <!-- deskripsi laporan -->
+                <div class="row mb-3">
+                  <label
+                    for="deskripsi_laporan"
+                    class="col-md-2 form-label forms-label mt-md-2"
+                    >Deskripsi Laporan
+                    <span class="text-important">*</span></label
+                  >
+                  <div class="col-md-10">
+                    <textarea
+                      id="deskripsi_laporan"
+                      name="deskripsi_laporan"
+                      class="form-control input-control"
+                      placeholder="Masukkan Deskripsi Laporan"
+                      required
+                      rows="4"
+                      disabled
+                    >
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis itaque odit omnis dolorum voluptates necessitatibus, velit est. Voluptatibus, doloremque molestias ducimus qui, est aliquam aspernatur doloribus iure eveniet facilis repudiandae!</textarea
+                    >
+                  </div>
+                </div>
               </div>
             </div>
           </form>
@@ -406,12 +404,12 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis itaque odit o
             <div class="col-md-4">
               <div class="footer-top__left">
                 <a
-                  href="./index.html"
+                  href="../../index.html"
                   class="footer-logo-link"
                 >
                   <figure class="footer-logo-wrapper">
                     <img
-                      src="./assets/svg/warga-letter-logo.svg"
+                      src="../../assets/svg/warga-letter-logo.svg"
                       alt="warga-letter-icon"
                     />
                   </figure>
@@ -436,15 +434,17 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis itaque odit o
                 <div class="footer-menu-wrapper">
                   <ul class="ps-0 ps-md-5">
                     <li class="footer-menu__header">Warga</li>
-                    <li><a href="./news.html">Pengumuman</a></li>
-                    <li><a href="./galery.html">Galeri</a></li>
+                    <li><a href="../news/news.html">Pengumuman</a></li>
+                    <li><a href="../../galery.html">Galeri</a></li>
                   </ul>
                 </div>
                 <div class="footer-menu-wrapper">
                   <ul class="ps-0 ps-md-5">
                     <li class="footer-menu__header">Layanan</li>
                     <li>
-                      <a href="./administration.html">Pengajuan Administrasi</a>
+                      <a href="../administration/administration.html"
+                        >Pengajuan Administrasi</a
+                      >
                     </li>
                     <li><a href="./report.html">Pelaporan</a></li>
                     <li><a href="./family.html">Menu Keluarga</a></li>
@@ -521,7 +521,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis itaque odit o
       src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"
     ></script>
     <!-- custom -->
-    <script src="./assets/js/scripts.js"></script>
+    <script src="../../assets/js/scripts.js"></script>
 
     <!-- script internal -->
     <script>
