@@ -7,5 +7,5 @@
 - ✅finishing tampilan family
 - ✅ubah align-items-center pada form
 - ✅bikin table nowrap
-- benerin semua link
+- ✅benerin semua link
 - profile/dashboard user
