@@ -69,7 +69,7 @@
       <nav
         class="navbar navbar-expand-lg bg-white fixed-top navbar-container navbar-shadow"
       >
-        <div class="container-fluid">
+        <div class="container-fluid flex-nowrap">
           <!-- brand -->
           <a
             class="navbar-brand fw-bold"
@@ -79,17 +79,20 @@
               alt="warga-letter-icon"
           /></a>
           <!-- toggle mobile navbar -->
-          <button
-            class="navbar-toggler navbar-toggling shadow-none"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+          <div class="toggle-nav-mobile">
+            <button
+              class="btn-nav-toggle"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasTop"
+              aria-controls="offcanvasTop"
+            >
+              <i
+                class="fa-solid fa-bars"
+                style="font-size: 1.25rem"
+              ></i>
+            </button>
+          </div>
           <!-- link -->
           <div
             class="collapse navbar-collapse navbar-collapsing"
@@ -111,25 +114,26 @@
                   <li>
                     <a
                       class="dropdown-item nav-dropdown-item active"
-                      href="./administration.html"
-                      ><span><i class="fa-solid fa-rocket"></i></span
+                      href="../administration/administration.html"
+                      ><span><i class="fa-regular fa-folder-open"></i></span
                       >Administrasi</a
                     >
                   </li>
                   <li>
                     <a
                       class="dropdown-item nav-dropdown-item"
-                      href="./report.html"
-                      ><span><i class="fa-solid fa-house-signal"></i></span
+                      href="../report/report.html"
+                      ><span><i class="fa-solid fa-bullhorn"></i></span
                       >Pelaporan</a
                     >
                   </li>
                   <li>
                     <a
                       class="dropdown-item nav-dropdown-item"
-                      href="./family.html"
-                      ><span><i class="fa-solid fa-seedling"></i></span>Menu
-                      keluarga</a
+                      href="../family/family.html"
+                      ><span
+                        ><i class="fa-solid fa-house-chimney-window"></i></span
+                      >Menu keluarga</a
                     >
                   </li>
                 </ul>
@@ -239,13 +243,23 @@
                           class="form-label forms-label"
                           >Berkas <span class="text-important">*</span></label
                         >
-                        <input
-                          type="file"
-                          id="berkas"
-                          name="berkas"
-                          class="form-control input-control"
-                          required
-                        />
+                        <div class="input-group">
+                          <input
+                            type="file"
+                            class="form-control input-control"
+                            id="berkas"
+                            name="berkas"
+                            required
+                            accept="image/*"
+                          />
+                          <button
+                            class="btn btn-main-outline-sm"
+                            type="button"
+                            id="button-foto-profil"
+                          >
+                            <i class="fa-solid fa-upload me-2"></i>Unggah
+                          </button>
+                        </div>
                       </div>
                     </div>
                     <!-- deskripsi -->
@@ -403,8 +417,8 @@
                     <li>
                       <a href="./administration.html">Pengajuan Administrasi</a>
                     </li>
-                    <li><a href="./report.html">Pelaporan</a></li>
-                    <li><a href="./family.html">Menu Keluarga</a></li>
+                    <li><a href="../report/report.html">Pelaporan</a></li>
+                    <li><a href="../family/family.html">Menu Keluarga</a></li>
                   </ul>
                 </div>
               </div>
@@ -431,6 +445,98 @@
         <div class="btn btn-main shadow">
           <i class="fa-solid fa-arrow-up"></i>
         </div>
+      </div>
+    </div>
+
+    <!-- offcanvas navbar mobile -->
+    <div
+      class="offcanvas offcanvas-top offcanvas-custom"
+      tabindex="-1"
+      id="offcanvasTop"
+      aria-labelledby="offcanvasTopLabel"
+    >
+      <div class="offcanvas-header">
+        <a
+          id="offcanvasTopLabel"
+          class="navbar-brand-mobile"
+          href="../../index.html"
+          ><img
+            src="../../assets/svg/warga-letter-logo.svg"
+            alt="warga-letter-icon"
+            class="h-100"
+        /></a>
+        <button
+          type="button"
+          class="btn-close text-sm"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="list-nav-link">
+          <li class="w-100">
+            <a
+              class="w-100 d-block mb-1 py-2 nav-collapse d-flex justify-content-between align-items-center active"
+              data-bs-toggle="collapse"
+              href="#collapseExample"
+              role="button"
+              aria-expanded="false"
+              aria-controls="collapseExample"
+            >
+              Warga
+              <i class="fa-solid fa-angle-down text-sm"></i>
+            </a>
+            <div
+              class="collapse"
+              id="collapseExample"
+            >
+              <div class="">
+                <ul class="list-nav-collapse">
+                  <li class="list-nav-collapse-item">
+                    <a
+                      href="./administration.html"
+                      class="active"
+                      >Administrasi</a
+                    >
+                  </li>
+                  <li class="list-nav-collapse-item">
+                    <a
+                      href="../report/report.html"
+                      class=""
+                      >Pelaporan</a
+                    >
+                  </li>
+                  <li class="list-nav-collapse-item">
+                    <a
+                      href="../family/family.html"
+                      class=""
+                      >Menu Keluarga</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="list-nav-link-item">
+            <a
+              href="../../galery.html"
+              class=""
+              >Galeri</a
+            >
+          </li>
+          <li class="list-nav-link-item">
+            <a
+              href="../news/news.html"
+              class=""
+              >Pengumuman</a
+            >
+          </li>
+        </ul>
+        <a
+          href="../auth/signin.html"
+          class="btn btn-main w-100 shadow"
+          >Masuk</a
+        >
       </div>
     </div>
 

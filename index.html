@@ -63,7 +63,7 @@
       <nav
         class="navbar navbar-expand-lg bg-white fixed-top navbar-container navbar-shadow"
       >
-        <div class="container-fluid">
+        <div class="container-fluid flex-nowrap">
           <!-- brand -->
           <a
             class="navbar-brand fw-bold"
@@ -73,17 +73,20 @@
               alt="warga-letter-icon"
           /></a>
           <!-- toggle mobile navbar -->
-          <button
-            class="navbar-toggler navbar-toggling shadow-none"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+          <div class="toggle-nav-mobile">
+            <button
+              class="btn-nav-toggle"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasTop"
+              aria-controls="offcanvasTop"
+            >
+              <i
+                class="fa-solid fa-bars"
+                style="font-size: 1.25rem"
+              ></i>
+            </button>
+          </div>
           <!-- link -->
           <div
             class="collapse navbar-collapse navbar-collapsing"
@@ -106,7 +109,7 @@
                     <a
                       class="dropdown-item nav-dropdown-item"
                       href="./pages/administration/administration.html"
-                      ><span><i class="fa-solid fa-rocket"></i></span
+                      ><span><i class="fa-regular fa-folder-open"></i></span
                       >Administrasi</a
                     >
                   </li>
@@ -114,7 +117,7 @@
                     <a
                       class="dropdown-item nav-dropdown-item"
                       href="./pages/report/report.html"
-                      ><span><i class="fa-solid fa-house-signal"></i></span
+                      ><span><i class="fa-solid fa-bullhorn"></i></span
                       >Pelaporan</a
                     >
                   </li>
@@ -122,8 +125,9 @@
                     <a
                       class="dropdown-item nav-dropdown-item"
                       href="./pages/family/family.html"
-                      ><span><i class="fa-solid fa-seedling"></i></span>Menu
-                      keluarga</a
+                      ><span
+                        ><i class="fa-solid fa-house-chimney-window"></i></span
+                      >Menu keluarga</a
                     >
                   </li>
                 </ul>
@@ -223,7 +227,7 @@
             <div class="project-card">
               <div class="d-flex mb-3">
                 <div class="project-badge">
-                  <i class="fa-solid fa-rocket project-badge__icon"></i>
+                  <i class="fa-regular fa-folder-open project-badge__icon"></i>
                 </div>
               </div>
               <h5>Administrasi fugiat quam dolores</h5>
@@ -243,7 +247,7 @@
             <div class="project-card">
               <div class="d-flex mb-3">
                 <div class="project-badge">
-                  <i class="fa-solid fa-house-signal project-badge__icon"></i>
+                  <i class="fa-solid fa-bullhorn project-badge__icon"></i>
                 </div>
               </div>
               <h5>Pelaporan amet officia ducimus temporibus</h5>
@@ -263,7 +267,9 @@
             <div class="project-card">
               <div class="d-flex mb-3">
                 <div class="project-badge">
-                  <i class="fa-solid fa-seedling project-badge__icon"></i>
+                  <i
+                    class="fa-solid fa-house-chimney-window project-badge__icon"
+                  ></i>
                 </div>
               </div>
               <h5>Keluarga perspiciatis voluptate</h5>
@@ -733,6 +739,88 @@
         <div class="btn btn-main shadow">
           <i class="fa-solid fa-arrow-up"></i>
         </div>
+      </div>
+    </div>
+
+    <!-- offcanvas navbar mobile -->
+    <div
+      class="offcanvas offcanvas-top offcanvas-custom"
+      tabindex="-1"
+      id="offcanvasTop"
+      aria-labelledby="offcanvasTopLabel"
+    >
+      <div class="offcanvas-header">
+        <a
+          id="offcanvasTopLabel"
+          class="navbar-brand-mobile"
+          href="./index.html"
+          ><img
+            src="./assets/svg/warga-letter-logo.svg"
+            alt="warga-letter-icon"
+            class="h-100"
+        /></a>
+        <button
+          type="button"
+          class="btn-close text-sm"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="list-nav-link">
+          <li class="w-100">
+            <a
+              class="w-100 d-block mb-1 py-2 nav-collapse d-flex justify-content-between align-items-center"
+              data-bs-toggle="collapse"
+              href="#collapseExample"
+              role="button"
+              aria-expanded="false"
+              aria-controls="collapseExample"
+            >
+              Warga
+              <i class="fa-solid fa-angle-down text-sm"></i>
+            </a>
+            <div
+              class="collapse"
+              id="collapseExample"
+            >
+              <div class="">
+                <ul class="list-nav-collapse">
+                  <li class="list-nav-collapse-item">
+                    <a href="./pages/administration/administration.html"
+                      >Administrasi</a
+                    >
+                  </li>
+                  <li class="list-nav-collapse-item">
+                    <a href="./pages/report/report.html">Pelaporan</a>
+                  </li>
+                  <li class="list-nav-collapse-item">
+                    <a href="./pages/family/family.html">Menu Keluarga</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="list-nav-link-item">
+            <a
+              href="./galery.html"
+              class=""
+              >Galeri</a
+            >
+          </li>
+          <li class="list-nav-link-item">
+            <a
+              href="./pages/news/news.html"
+              class=""
+              >Pengumuman</a
+            >
+          </li>
+        </ul>
+        <a
+          href="./pages/auth/signin.html"
+          class="btn btn-main w-100 shadow"
+          >Masuk</a
+        >
       </div>
     </div>
 
