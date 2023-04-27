@@ -249,13 +249,23 @@
                     >Berkas <span class="text-important">*</span></label
                   >
                   <div class="col-md-10">
-                    <input
-                      type="file"
-                      id="berkas"
-                      name="berkas"
-                      class="form-control input-control"
-                      required
-                    />
+                    <div class="input-group">
+                      <input
+                        type="file"
+                        class="form-control input-control"
+                        id="berkas"
+                        name="berkas"
+                        required
+                        accept="image/*"
+                      />
+                      <button
+                        class="btn btn-main-outline-sm"
+                        type="button"
+                        id="button-foto-profil"
+                      >
+                        <i class="fa-solid fa-upload me-2"></i>Unggah
+                      </button>
+                    </div>
                   </div>
                 </div>
                 <!-- deskripsi -->

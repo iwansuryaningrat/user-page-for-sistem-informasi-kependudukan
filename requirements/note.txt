@@ -10,4 +10,5 @@
 - ✅benerin semua link
 - ✅profile/dashboard user
 - ✅finishing navbar
-- finishing look input file
+- ✅finishing look input file
+- finishing homepage
