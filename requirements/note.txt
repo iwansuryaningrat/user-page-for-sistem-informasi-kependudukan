@@ -11,4 +11,5 @@
 - ✅profile/dashboard user
 - ✅finishing navbar
 - ✅finishing look input file
-- finishing homepage
+- ✅finishing homepage
+- Content Real!
