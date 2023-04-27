@@ -8,6 +8,6 @@
 - ✅ubah align-items-center pada form
 - ✅bikin table nowrap
 - ✅benerin semua link
-- profile/dashboard user
-- finishing navbar
+- ✅profile/dashboard user
+- ✅finishing navbar
 - finishing look input file

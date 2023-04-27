@@ -87,6 +87,14 @@
   -ms-border-radius: 9px;
   -o-border-radius: 9px;
 }
+.btn-nav-toggle {
+  color: #227535 !important;
+  padding: 0.375rem 0.625rem;
+  outline: none !important;
+}
+.btn-nav-toggle:hover {
+  background-color: #3cb35830 !important;
+}
 .btn-white:hover {
   opacity: 0.8;
   color: var(--primary-700);
@@ -118,6 +126,11 @@
   background-color: #fff !important;
   box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.4) !important;
   color: var(--primary-700) !important;
+}
+.btn-nav-toggle:focus {
+  box-shadow: 0 0 0 0.15rem rgba(40, 167, 69, 0.8) !important;
+  outline: none !important;
+  background-color: #3cb35830 !important;
 }
 
 .btn-main-outline {
@@ -452,6 +465,9 @@ nav.navbar-shadow {
   font-size: 1rem;
   color: #fff;
   fill: #fff;
+}
+.toggle-nav-mobile {
+  display: none;
 }
 
 /* header */

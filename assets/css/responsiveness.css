@@ -28,6 +28,9 @@
   .navbar-collapse.navbar-collapsing.collapse.show {
     padding-bottom: 1.5rem;
   }
+  .toggle-nav-mobile {
+    display: block;
+  }
 
   /* homepage */
   .general-image-wrapper {
