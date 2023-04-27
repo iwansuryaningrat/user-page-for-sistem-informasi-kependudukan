@@ -73,17 +73,20 @@
               alt="warga-letter-icon"
           /></a>
           <!-- toggle mobile navbar -->
-          <button
-            class="navbar-toggler navbar-toggling shadow-none"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+          <div class="toggle-nav-mobile">
+            <button
+              class="btn-nav-toggle"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasTop"
+              aria-controls="offcanvasTop"
+            >
+              <i
+                class="fa-solid fa-bars"
+                style="font-size: 1.25rem"
+              ></i>
+            </button>
+          </div>
           <!-- link -->
           <div
             class="collapse navbar-collapse navbar-collapsing"
@@ -367,6 +370,98 @@
         <div class="btn btn-main shadow">
           <i class="fa-solid fa-arrow-up"></i>
         </div>
+      </div>
+    </div>
+
+    <!-- offcanvas navbar mobile -->
+    <div
+      class="offcanvas offcanvas-top offcanvas-custom"
+      tabindex="-1"
+      id="offcanvasTop"
+      aria-labelledby="offcanvasTopLabel"
+    >
+      <div class="offcanvas-header">
+        <a
+          id="offcanvasTopLabel"
+          class="navbar-brand-mobile"
+          href="../../index.html"
+          ><img
+            src="../../assets/svg/warga-letter-logo.svg"
+            alt="warga-letter-icon"
+            class="h-100"
+        /></a>
+        <button
+          type="button"
+          class="btn-close text-sm"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="list-nav-link">
+          <li class="w-100">
+            <a
+              class="w-100 d-block mb-1 py-2 nav-collapse d-flex justify-content-between align-items-center"
+              data-bs-toggle="collapse"
+              href="#collapseExample"
+              role="button"
+              aria-expanded="false"
+              aria-controls="collapseExample"
+            >
+              Warga
+              <i class="fa-solid fa-angle-down text-sm"></i>
+            </a>
+            <div
+              class="collapse"
+              id="collapseExample"
+            >
+              <div class="">
+                <ul class="list-nav-collapse">
+                  <li class="list-nav-collapse-item">
+                    <a
+                      href="../administration/administration.html"
+                      class=""
+                      >Administrasi</a
+                    >
+                  </li>
+                  <li class="list-nav-collapse-item">
+                    <a
+                      href="../report/report.html"
+                      class=""
+                      >Pelaporan</a
+                    >
+                  </li>
+                  <li class="list-nav-collapse-item">
+                    <a
+                      href="../family/family.html"
+                      class=""
+                      >Menu Keluarga</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="list-nav-link-item">
+            <a
+              href="../../galery.html"
+              class=""
+              >Galeri</a
+            >
+          </li>
+          <li class="list-nav-link-item">
+            <a
+              href="./news.html"
+              class="active"
+              >Pengumuman</a
+            >
+          </li>
+        </ul>
+        <a
+          href="../auth/signin.html"
+          class="btn btn-main w-100 shadow"
+          >Masuk</a
+        >
       </div>
     </div>
 
