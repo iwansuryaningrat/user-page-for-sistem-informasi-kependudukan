@@ -308,8 +308,8 @@
   }
   /* container */
   .container {
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
   }
   .sign-container-content {
     padding: 7rem 1rem 6rem;
