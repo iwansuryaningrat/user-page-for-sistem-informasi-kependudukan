@@ -101,3 +101,6 @@ svg.fill-gray,
 .mb-8 {
   margin-bottom: 2rem;
 }
+.pb-100vh-420 {
+  padding-bottom: calc(100vh - 580px) !important;
+}
