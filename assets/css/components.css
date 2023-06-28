@@ -676,6 +676,54 @@ footer hr {
   opacity: 0;
   visibility: hidden;
 }
+#add-galery-fixed .btn.btn-main {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  background: var(--secondary-500);
+  color: #fff;
+  cursor: pointer;
+  transition: var(--transition-all-300);
+  -webkit-transition: var(--transition-all-300);
+  -moz-transition: var(--transition-all-300);
+  -ms-transition: var(--transition-all-300);
+  -o-transition: var(--transition-all-300);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  opacity: 0;
+  visibility: hidden;
+}
+#add-galery-fixed .btn.btn-main .text {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;
+  pointer-events: none;
+  white-space: nowrap;
+  font-size: 0.875rem;
+}
+#add-galery-fixed.down .btn.btn-main {
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 999;
+  visibility: visible;
+  bottom: 3rem;
+  right: 3rem;
+}
+#add-galery-fixed.top .btn.btn-main {
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 999;
+  visibility: visible;
+  bottom: 7.5rem;
+  right: 3rem;
+}
 #scroll-to-top .btn.btn-main:hover {
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
@@ -683,7 +731,31 @@ footer hr {
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1);
 }
-#scroll-to-top .btn.btn-main:active {
+#add-galery-fixed .btn.btn-main:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  width: 160px;
+  border-radius: 999px;
+  -webkit-border-radius: 999px;
+  -moz-border-radius: 999px;
+  -ms-border-radius: 999px;
+  -o-border-radius: 999px;
+}
+#add-galery-fixed .btn.btn-main:hover svg {
+  margin-right: 0.5rem;
+}
+#add-galery-fixed .btn.btn-main:hover .text {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  z-index: 1;
+  pointer-events: auto;
+}
+#scroll-to-top .btn.btn-main:active,
+#add-galery-fixed .btn.btn-main:active {
   transform: scale(0.9) !important;
   -webkit-transform: scale(0.9) !important;
   -moz-transform: scale(0.9) !important;
