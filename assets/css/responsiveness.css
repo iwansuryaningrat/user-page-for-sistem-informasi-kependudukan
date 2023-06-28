@@ -137,6 +137,12 @@
     padding-bottom: 0;
   }
 
+  /* utilities */
+  .max-w-80 {
+    max-width: 100%;
+    width: 100%;
+  }
+
   /* card */
   .card-cta-main {
     padding: 3rem 2.5rem 0;
@@ -233,6 +239,9 @@
   /* etc */
   .news-image__wrap {
     height: 12rem;
+  }
+  .news-image__wrap.h-13 {
+    height: 11rem;
   }
   .news-container {
     grid-gap: 2rem 1.5rem;

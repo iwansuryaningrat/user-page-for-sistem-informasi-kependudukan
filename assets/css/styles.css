@@ -195,6 +195,9 @@
   -o-border-radius: 0.75rem;
   margin-bottom: 1rem;
 }
+.news-image__wrap.h-13 {
+  height: 13rem;
+}
 .news-image__photo {
   width: 100%;
   object-fit: cover;
