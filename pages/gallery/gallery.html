@@ -9,7 +9,7 @@
     />
 
     <!-- Styles -->
-    <!-- info -->
+    <!-- font -->
     <link
       rel="preconnect"
       href="https://fonts.googleapis.com"
@@ -38,12 +38,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- datatables -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap5.min.css"
-    />
     <!-- custom -->
     <link
       rel="stylesheet"
@@ -61,7 +55,7 @@
       type="image/x-icon"
     />
     <!-- title -->
-    <title>Form Edit Pengajuan Administrasi | Warga Site</title>
+    <title>Galeri | Warga Site</title>
   </head>
   <body>
     <div>
@@ -69,7 +63,7 @@
       <nav
         class="navbar navbar-expand-lg bg-white fixed-top navbar-container navbar-shadow"
       >
-        <div class="container-fluid flex-nowrap">
+        <div class="container-fluid">
           <!-- brand -->
           <a
             class="navbar-brand fw-bold"
@@ -102,7 +96,7 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item nav-items dropdown nav-item-dropdown">
                 <a
-                  class="nav-link navbar-link dropdown-toggle active"
+                  class="nav-link navbar-link dropdown-toggle"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -113,7 +107,7 @@
                 <ul class="dropdown-menu nav-dropdown-menu shadow">
                   <li>
                     <a
-                      class="dropdown-item nav-dropdown-item active"
+                      class="dropdown-item nav-dropdown-item"
                       href="../administration/administration.html"
                       ><span><i class="fa-regular fa-folder-open"></i></span
                       >Administrasi</a
@@ -140,7 +134,7 @@
               </li>
               <li class="nav-item nav-items">
                 <a
-                  class="nav-link navbar-link"
+                  class="nav-link navbar-link active"
                   href="../gallery/gallery.html"
                   >Galeri</a
                 >
@@ -165,148 +159,129 @@
       </nav>
       <!-- end of navigation -->
       <!-- header -->
-      <header class="container px-0">
-        <div class="header-container-dashboard-form">
-          <div class="mb-4">
-            <button
-              class="btn btn-main-outline-xs"
-              type="button"
-              onclick="goBack()"
-            >
-              <i class="fa-solid fa-arrow-left me-2"></i>Kembali
-            </button>
-          </div>
-          <h3 class="mb-2">Riwayat Pengajuan Administrasi</h3>
+      <header class="container">
+        <div class="header-container-mini">
+          <h1 class="mb-3">Galeri</h1>
+          <p class="text-basic text-center mb-0 max-w-80">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+            iusto architecto sint ipsam, labore quo dolore quis voluptate id
+            alias, impedit quia! Illum, consequatur quae quo at dolore
+            repellendus ipsa.
+          </p>
         </div>
       </header>
-      <!-- end of header -->
       <!-- main -->
       <main>
-        <section class="container container-space pt-0">
-          <form
-            class="card-form-container card"
-            id="adminFormEdit"
-            action="#"
-            enctype="multipart/form-data"
-            method="POST"
-          >
-            <div class="card-header card-form-header">
-              <p class="mb-0 fw-semibold">
-                Form Edit Pengajuan Permohonan Administrasi
+        <section class="container container-space">
+          <div class="news-container">
+            <a
+              href="./gallery-detail.html"
+              class="news-card"
+            >
+              <figure class="news-image__wrap h-13">
+                <img
+                  src="../../assets/img/image-7.jpg"
+                  alt="news-1"
+                  class="news-image__photo"
+                />
+              </figure>
+              <div class="d-flex align-items-center mb-2">
+                <p class="mb-0">
+                  <span class="badge badge-done">Kategori 1</span>
+                </p>
+              </div>
+              <p class="news-title-card text-lg mb-2">
+                Galeri Kegiatan Warga 1
               </p>
-            </div>
-            <div class="card-body card-form-body">
-              <div>
-                <!-- keperluan -->
-                <div class="row mb-3">
-                  <label
-                    for="keperluan"
-                    class="col-md-2 form-label forms-label mt-md-2"
-                    >Keperluan <span class="text-important">*</span></label
-                  >
-                  <div class="col-md-10">
-                    <input
-                      type="text"
-                      id="keperluan"
-                      name="keperluan"
-                      class="form-control input-control"
-                      placeholder="Masukkan Keperluan"
-                      required
-                      value="Keperluan Berencana"
-                    />
-                  </div>
-                </div>
-                <!-- kategori -->
-                <div class="row mb-3">
-                  <label
-                    for="kategori"
-                    class="col-md-2 form-label forms-label mt-md-2"
-                    >Kategori <span class="text-important">*</span></label
-                  >
-                  <div class="col-md-10">
-                    <select
-                      id="kategori"
-                      name="kategori"
-                      required
-                      class="form-select select-control"
-                    >
-                      <option value="">Pilih Kategori</option>
-                      <option value="1">Kategori 1</option>
-                      <option
-                        value="2"
-                        selected
-                      >
-                        Kategori 2
-                      </option>
-                      <option value="3">Kategori 3</option>
-                    </select>
-                  </div>
-                </div>
-                <!-- berkas -->
-                <div class="row mb-3">
-                  <label
-                    for="berkas"
-                    class="col-md-2 form-label forms-label mt-md-2"
-                    >Berkas <span class="text-important">*</span></label
-                  >
-                  <div class="col-md-10">
-                    <div class="input-group">
-                      <input
-                        type="file"
-                        class="form-control input-control"
-                        id="berkas"
-                        name="berkas"
-                        required
-                        accept="image/*"
-                      />
-                      <button
-                        class="btn btn-main-outline-sm"
-                        type="button"
-                        id="button-foto-profil"
-                      >
-                        <i class="fa-solid fa-upload me-2"></i>Unggah
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <!-- deskripsi -->
-                <div class="row mb-3">
-                  <label
-                    for="deskripsi"
-                    class="col-md-2 form-label forms-label mt-md-2"
-                    >Deskripsi <span class="text-important">*</span></label
-                  >
-                  <div class="col-md-10">
-                    <textarea
-                      id="deskripsi"
-                      name="deskripsi"
-                      class="form-control input-control"
-                      placeholder="Masukkan Deskripsi"
-                      required
-                      rows="3"
-                    >
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum deserunt ut molestias maiores similique ex maxime itaque officiis. Tenetur, temporibus atque eum pariatur doloribus quasi. Perferendis sed fugiat veritatis nesciunt.</textarea
-                    >
-                  </div>
-                </div>
+              <div class="d-flex align-items-center">
+                <p class="d-flex align-items-center me-3 mb-0">
+                  <i class="fa-solid fa-circle-user me-1 d-block fill-gray"></i>
+                  <span class="text-sm d-block text-gray">Abimanyu</span>
+                </p>
               </div>
-            </div>
-            <div class="card-footer card-form-footer">
-              <div class="w-100 d-flex justify-content-end">
-                <button
-                  type="submit"
-                  form="adminFormEdit"
-                  class="btn btn-main-sm btn-submit px-4"
-                  id="adminFormEditButton"
-                >
-                  Perbarui Pengajuan
-                </button>
+            </a>
+            <a
+              href="./gallery-detail.html"
+              class="news-card"
+            >
+              <figure class="news-image__wrap h-13">
+                <img
+                  src="../../assets/img/image-7.jpg"
+                  alt="news-1"
+                  class="news-image__photo"
+                />
+              </figure>
+              <div class="d-flex align-items-center mb-2">
+                <p class="mb-0">
+                  <span class="badge badge-done">Kategori 1</span>
+                </p>
               </div>
-            </div>
-          </form>
+              <p class="news-title-card text-lg mb-2">
+                Galeri Kegiatan Warga 1
+              </p>
+              <div class="d-flex align-items-center">
+                <p class="d-flex align-items-center me-3 mb-0">
+                  <i class="fa-solid fa-circle-user me-1 d-block fill-gray"></i>
+                  <span class="text-sm d-block text-gray">Abimanyu</span>
+                </p>
+              </div>
+            </a>
+            <a
+              href="./gallery-detail.html"
+              class="news-card"
+            >
+              <figure class="news-image__wrap h-13">
+                <img
+                  src="../../assets/img/image-7.jpg"
+                  alt="news-1"
+                  class="news-image__photo"
+                />
+              </figure>
+              <div class="d-flex align-items-center mb-2">
+                <p class="mb-0">
+                  <span class="badge badge-accepted">Kategori 1</span>
+                </p>
+              </div>
+              <p class="news-title-card text-lg mb-2">
+                Galeri Kegiatan Warga 1
+              </p>
+              <div class="d-flex align-items-center">
+                <p class="d-flex align-items-center me-3 mb-0">
+                  <i class="fa-solid fa-circle-user me-1 d-block fill-gray"></i>
+                  <span class="text-sm d-block text-gray">Abimanyu</span>
+                </p>
+              </div>
+            </a>
+            <a
+              href="./gallery-detail.html"
+              class="news-card"
+            >
+              <figure class="news-image__wrap h-13">
+                <img
+                  src="../../assets/img/image-7.jpg"
+                  alt="news-1"
+                  class="news-image__photo"
+                />
+              </figure>
+              <div class="d-flex align-items-center mb-2">
+                <p class="mb-0">
+                  <span class="badge badge-onproccess">Kategori 1</span>
+                </p>
+              </div>
+              <p class="news-title-card text-lg mb-2">
+                Galeri Kegiatan Warga 1
+              </p>
+              <div class="d-flex align-items-center">
+                <p class="d-flex align-items-center me-3 mb-0">
+                  <i class="fa-solid fa-circle-user me-1 d-block fill-gray"></i>
+                  <span class="text-sm d-block text-gray">Abimanyu</span>
+                </p>
+              </div>
+            </a>
+          </div>
         </section>
       </main>
-      <!-- end of main -->
+
       <!-- footer -->
       <footer class="big-footer">
         <section class="container">
@@ -345,7 +320,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum deserunt ut mole
                 <div class="footer-menu-wrapper">
                   <ul class="ps-0 ps-md-5">
                     <li class="footer-menu__header">Warga</li>
-                    <li><a href="../news/news.html">Pengumuman</a></li>
+                    <li><a href="./news.html">Pengumuman</a></li>
                     <li><a href="../gallery/gallery.html">Galeri</a></li>
                   </ul>
                 </div>
@@ -353,7 +328,9 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum deserunt ut mole
                   <ul class="ps-0 ps-md-5">
                     <li class="footer-menu__header">Layanan</li>
                     <li>
-                      <a href="./administration.html">Pengajuan Administrasi</a>
+                      <a href="../administration/administration.html"
+                        >Pengajuan Administrasi</a
+                      >
                     </li>
                     <li><a href="../report/report.html">Pelaporan</a></li>
                     <li><a href="../family/family.html">Menu Keluarga</a></li>
@@ -382,6 +359,17 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum deserunt ut mole
       <div id="scroll-to-top">
         <div class="btn btn-main shadow">
           <i class="fa-solid fa-arrow-up"></i>
+        </div>
+      </div>
+      <!-- button add gallery -->
+      <div id="add-gallery-fixed">
+        <div
+          class="btn btn-main shadow"
+          data-bs-toggle="modal"
+          data-bs-target="#modalAddGallery"
+        >
+          <i class="fa-solid fa-plus"></i>
+          <span class="text">Tambah Galeri</span>
         </div>
       </div>
     </div>
@@ -414,7 +402,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum deserunt ut mole
         <ul class="list-nav-link">
           <li class="w-100">
             <a
-              class="w-100 d-block mb-1 py-2 nav-collapse d-flex justify-content-between align-items-center active"
+              class="w-100 d-block mb-1 py-2 nav-collapse d-flex justify-content-between align-items-center"
               data-bs-toggle="collapse"
               href="#collapseExample"
               role="button"
@@ -432,8 +420,8 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum deserunt ut mole
                 <ul class="list-nav-collapse">
                   <li class="list-nav-collapse-item">
                     <a
-                      href="./administration.html"
-                      class="active"
+                      href="../administration/administration.html"
+                      class=""
                       >Administrasi</a
                     >
                   </li>
@@ -458,13 +446,13 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum deserunt ut mole
           <li class="list-nav-link-item">
             <a
               href="../gallery/gallery.html"
-              class=""
+              class="active"
               >Galeri</a
             >
           </li>
           <li class="list-nav-link-item">
             <a
-              href="../news/news.html"
+              href="./news.html"
               class=""
               >Pengumuman</a
             >
@@ -478,6 +466,129 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum deserunt ut mole
       </div>
     </div>
 
+    <!-- modal add gallery -->
+    <div
+      class="modal fade"
+      id="modalAddGallery"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="modalAddGalleryLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <form
+          id="formAddGallery"
+          class="modal-content"
+          action="#"
+        >
+          <div class="modal-header">
+            <h1
+              class="modal-title fs-5"
+              id="modalAddGalleryLabel"
+            >
+              Form Tambah Galeri
+            </h1>
+            <button
+              type="button"
+              class="btn-close text-sm shadow-none"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- judul galeri -->
+            <div class="mb-3">
+              <label
+                for="judul"
+                class="form-label forms-label"
+                >Judul</label
+              >
+              <input
+                type="text"
+                class="form-control input-control"
+                id="judul"
+                name="judul"
+                placeholder="Masukkan Judul Galeri"
+              />
+            </div>
+            <!-- kategori galeri -->
+            <div class="mb-3">
+              <label
+                for="kategori"
+                class="form-label forms-label"
+                >Kategori</label
+              >
+              <select
+                class="form-select select-control"
+                id="kategori"
+                name="kategori"
+              >
+                <option
+                  selected
+                  value=""
+                >
+                  Pilih Kategori Galeri
+                </option>
+                <option value="1">Kategori 1</option>
+                <option value="2">Kategori 2</option>
+                <option value="3">Kategori 3</option>
+              </select>
+            </div>
+            <!-- deskripsi galeri -->
+            <div class="mb-3">
+              <label
+                for="deskripsi"
+                class="form-label forms-label"
+                >Deskripsi</label
+              >
+              <textarea
+                class="form-control input-control"
+                id="deskripsi"
+                name="deskripsi"
+                rows="3"
+                placeholder="Masukkan Deskripsi Galeri"
+              ></textarea>
+            </div>
+            <!-- thumbnail galeri -->
+            <div class="mb-3">
+              <label
+                for="thumbnail"
+                class="form-label forms-label"
+                >Thumbnail</label
+              >
+              <div class="input-group">
+                <input
+                  type="file"
+                  class="form-control input-control"
+                  id="thumbnail"
+                  name="thumbnail"
+                  required
+                  accept="image/*"
+                />
+                <button
+                  class="btn btn-main-outline-sm"
+                  type="button"
+                  id="button-foto-profil"
+                >
+                  <i class="fa-solid fa-upload me-2"></i>Unggah
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="submit"
+              class="btn btn-main-sm"
+              id="formAddGalleryBtn"
+            >
+              Tambah
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
     <!-- scripts -->
     <!-- jquery -->
     <script
@@ -486,7 +597,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum deserunt ut mole
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <!-- jquery validation -->
+    <!-- jquery validate -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"
       integrity="sha512-37T7leoNS06R80c8Ulq7cdCDU5MNQBwlYoy1TX/WUsLFC2eYNqtKlV0QjH7r8JpG/S0GUMZwebnVFLPd6SU5yg=="
@@ -499,7 +610,6 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum deserunt ut mole
       integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
       crossorigin="anonymous"
     ></script>
-    <!-- bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
       integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
@@ -512,65 +622,47 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum deserunt ut mole
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <!-- datatable -->
-    <script
-      type="text/javascript"
-      src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"
-    ></script>
     <!-- custom -->
     <script src="../../assets/js/scripts.js"></script>
 
     <!-- script internal -->
     <script>
-      // add method validation only letters
-      $.validator.addMethod('alphabetOnly', function (value, element) {
-        return this.optional(element) || value == value.match(/^[A-Za-z\s']+$/);
-      });
       // validate
       $(document).ready(function () {
-        $('#adminFormEdit').validate({
+        $('#formAddGallery').validate({
           rules: {
-            kategori: {
+            judul: {
               required: true,
             },
-            keperluan: {
+            kategori: {
               required: true,
             },
             deskripsi: {
               required: true,
             },
-            berkas: {
+            thumbnail: {
               required: true,
             },
           },
           messages: {
-            kategori: {
-              required: 'Kategori tidak boleh kosong.',
+            judul: {
+              required: 'Judul tidak boleh kosong',
             },
-            keperluan: {
-              required: 'Laporan tidak boleh kosong.',
+            kategori: {
+              required: 'Kategori tidak boleh kosong',
             },
             deskripsi: {
-              required: 'Deskripsi laporan tidak boleh kosong.',
+              required: 'Deskripsi tidak boleh kosong',
             },
-            berkas: {
-              required: 'Berkas tidak boleh kosong.',
+            thumbnail: {
+              required: 'Thumbnail tidak boleh kosong',
             },
           },
         });
-        $('#adminFormEditButton').on('click', () => {
-          console.log($('#adminFormEdit').valid());
+        $('#formAddGalleryButton').on('click', () => {
+          console.log($('#formAddGallery').valid());
         });
       });
-
-      //   onclick back to previous page
-      function goBack() {
-        window.history.back();
-      }
     </script>
   </body>
 </html>
