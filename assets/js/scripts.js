@@ -27,21 +27,21 @@ $(document).ready(function () {
   });
 });
 
-// add galery fixed button
+// add gallery fixed button
 $(document).ready(function () {
   $(window).scroll(function () {
     if ($(window).scrollTop() > 0 && $(window).scrollTop() <= 1080) {
-      $('#add-galery-fixed').removeClass('hide');
-      $('#add-galery-fixed').removeClass('top');
-      $('#add-galery-fixed').addClass('down');
+      $('#add-gallery-fixed').removeClass('hide');
+      $('#add-gallery-fixed').removeClass('top');
+      $('#add-gallery-fixed').addClass('down');
     } else if ($(window).scrollTop() > 1080) {
-      $('#add-galery-fixed').removeClass('hide');
-      $('#add-galery-fixed').removeClass('down');
-      $('#add-galery-fixed').addClass('top');
+      $('#add-gallery-fixed').removeClass('hide');
+      $('#add-gallery-fixed').removeClass('down');
+      $('#add-gallery-fixed').addClass('top');
     } else {
-      $('#add-galery-fixed').removeClass('top');
-      $('#add-galery-fixed').removeClass('down');
-      $('#add-galery-fixed').addClass('hide');
+      $('#add-gallery-fixed').removeClass('top');
+      $('#add-gallery-fixed').removeClass('down');
+      $('#add-gallery-fixed').addClass('hide');
     }
   });
 });
