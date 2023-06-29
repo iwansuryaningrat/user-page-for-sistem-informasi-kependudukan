@@ -369,6 +369,7 @@
 }
 .gallery-view-item__warp {
   width: 100%;
+  height: 200px;
   overflow: hidden;
   border-radius: 0.75rem;
   -webkit-border-radius: 0.75rem;
@@ -380,6 +381,7 @@
 }
 .gallery-view-item {
   width: 100%;
+  height: 100%;
   object-position: center;
   object-fit: cover;
 }
