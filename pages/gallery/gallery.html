@@ -135,14 +135,14 @@
               <li class="nav-item nav-items">
                 <a
                   class="nav-link navbar-link active"
-                  href="../galery/galery.html"
+                  href="../gallery/gallery.html"
                   >Galeri</a
                 >
               </li>
               <li class="nav-item nav-items">
                 <a
                   class="nav-link navbar-link"
-                  href="./news.html"
+                  href="../news/news.html"
                   >Pengumuman</a
                 >
               </li>
@@ -175,7 +175,7 @@
         <section class="container container-space">
           <div class="news-container">
             <a
-              href="./galery-detail.html"
+              href="./gallery-detail.html"
               class="news-card"
             >
               <figure class="news-image__wrap h-13">
@@ -201,7 +201,7 @@
               </div>
             </a>
             <a
-              href="./galery-detail.html"
+              href="./gallery-detail.html"
               class="news-card"
             >
               <figure class="news-image__wrap h-13">
@@ -227,7 +227,7 @@
               </div>
             </a>
             <a
-              href="./galery-detail.html"
+              href="./gallery-detail.html"
               class="news-card"
             >
               <figure class="news-image__wrap h-13">
@@ -253,7 +253,7 @@
               </div>
             </a>
             <a
-              href="./galery-detail.html"
+              href="./gallery-detail.html"
               class="news-card"
             >
               <figure class="news-image__wrap h-13">
@@ -321,7 +321,7 @@
                   <ul class="ps-0 ps-md-5">
                     <li class="footer-menu__header">Warga</li>
                     <li><a href="./news.html">Pengumuman</a></li>
-                    <li><a href="../galery/galery.html">Galeri</a></li>
+                    <li><a href="../gallery/gallery.html">Galeri</a></li>
                   </ul>
                 </div>
                 <div class="footer-menu-wrapper">
@@ -361,9 +361,13 @@
           <i class="fa-solid fa-arrow-up"></i>
         </div>
       </div>
-      <!-- button add galery -->
-      <div id="add-galery-fixed">
-        <div class="btn btn-main shadow">
+      <!-- button add gallery -->
+      <div id="add-gallery-fixed">
+        <div
+          class="btn btn-main shadow"
+          data-bs-toggle="modal"
+          data-bs-target="#modalAddGallery"
+        >
           <i class="fa-solid fa-plus"></i>
           <span class="text">Tambah Galeri</span>
         </div>
@@ -441,7 +445,7 @@
           </li>
           <li class="list-nav-link-item">
             <a
-              href="../galery/galery.html"
+              href="../gallery/gallery.html"
               class="active"
               >Galeri</a
             >
@@ -459,6 +463,129 @@
           class="btn btn-main w-100 shadow"
           >Masuk</a
         >
+      </div>
+    </div>
+
+    <!-- modal add gallery -->
+    <div
+      class="modal fade"
+      id="modalAddGallery"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="modalAddGalleryLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <form
+          id="formAddGallery"
+          class="modal-content"
+          action="#"
+        >
+          <div class="modal-header">
+            <h1
+              class="modal-title fs-5"
+              id="modalAddGalleryLabel"
+            >
+              Form Tambah Galeri
+            </h1>
+            <button
+              type="button"
+              class="btn-close text-sm shadow-none"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- judul galeri -->
+            <div class="mb-3">
+              <label
+                for="judul"
+                class="form-label forms-label"
+                >Judul</label
+              >
+              <input
+                type="text"
+                class="form-control input-control"
+                id="judul"
+                name="judul"
+                placeholder="Masukkan Judul Galeri"
+              />
+            </div>
+            <!-- kategori galeri -->
+            <div class="mb-3">
+              <label
+                for="kategori"
+                class="form-label forms-label"
+                >Kategori</label
+              >
+              <select
+                class="form-select select-control"
+                id="kategori"
+                name="kategori"
+              >
+                <option
+                  selected
+                  value=""
+                >
+                  Pilih Kategori Galeri
+                </option>
+                <option value="1">Kategori 1</option>
+                <option value="2">Kategori 2</option>
+                <option value="3">Kategori 3</option>
+              </select>
+            </div>
+            <!-- deskripsi galeri -->
+            <div class="mb-3">
+              <label
+                for="deskripsi"
+                class="form-label forms-label"
+                >Deskripsi</label
+              >
+              <textarea
+                class="form-control input-control"
+                id="deskripsi"
+                name="deskripsi"
+                rows="3"
+                placeholder="Masukkan Deskripsi Galeri"
+              ></textarea>
+            </div>
+            <!-- thumbnail galeri -->
+            <div class="mb-3">
+              <label
+                for="thumbnail"
+                class="form-label forms-label"
+                >Thumbnail</label
+              >
+              <div class="input-group">
+                <input
+                  type="file"
+                  class="form-control input-control"
+                  id="thumbnail"
+                  name="thumbnail"
+                  required
+                  accept="image/*"
+                />
+                <button
+                  class="btn btn-main-outline-sm"
+                  type="button"
+                  id="button-foto-profil"
+                >
+                  <i class="fa-solid fa-upload me-2"></i>Unggah
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="submit"
+              class="btn btn-main-sm"
+              id="formAddGalleryBtn"
+            >
+              Tambah
+            </button>
+          </div>
+        </form>
       </div>
     </div>
 
@@ -499,6 +626,43 @@
     <script src="../../assets/js/scripts.js"></script>
 
     <!-- script internal -->
-    <script></script>
+    <script>
+      // validate
+      $(document).ready(function () {
+        $('#formAddGallery').validate({
+          rules: {
+            judul: {
+              required: true,
+            },
+            kategori: {
+              required: true,
+            },
+            deskripsi: {
+              required: true,
+            },
+            thumbnail: {
+              required: true,
+            },
+          },
+          messages: {
+            judul: {
+              required: 'Judul tidak boleh kosong',
+            },
+            kategori: {
+              required: 'Kategori tidak boleh kosong',
+            },
+            deskripsi: {
+              required: 'Deskripsi tidak boleh kosong',
+            },
+            thumbnail: {
+              required: 'Thumbnail tidak boleh kosong',
+            },
+          },
+        });
+        $('#formAddGalleryButton').on('click', () => {
+          console.log($('#formAddGallery').valid());
+        });
+      });
+    </script>
   </body>
 </html>
