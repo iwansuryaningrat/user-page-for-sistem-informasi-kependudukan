@@ -38,24 +38,29 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- fancybox -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
     <!-- custom -->
     <link
       rel="stylesheet"
-      href="../../assets/css/styles.css"
+      href="./assets/css/styles.css"
     />
     <link
       rel="stylesheet"
-      href="../../assets/css/responsiveness.css"
+      href="./assets/css/responsiveness.css"
     />
 
     <!-- favicon -->
     <link
       rel="shortcut icon"
-      href="../../public/favicon.ico"
+      href="./public/favicon.ico"
       type="image/x-icon"
     />
     <!-- title -->
-    <title>Barita 1 : Portal Berita | Warga Site</title>
+    <title>Galeri | Warga Site</title>
   </head>
   <body>
     <div>
@@ -63,13 +68,13 @@
       <nav
         class="navbar navbar-expand-lg bg-white fixed-top navbar-container navbar-shadow"
       >
-        <div class="container-fluid">
+        <div class="container-fluid flex-nowrap">
           <!-- brand -->
           <a
             class="navbar-brand fw-bold"
-            href="../../index.html"
+            href="./index.html"
             ><img
-              src="../../assets/svg/warga-letter-logo.svg"
+              src="./assets/svg/warga-letter-logo.svg"
               alt="warga-letter-icon"
           /></a>
           <!-- toggle mobile navbar -->
@@ -108,7 +113,7 @@
                   <li>
                     <a
                       class="dropdown-item nav-dropdown-item"
-                      href="../administration/administration.html"
+                      href="./pages/administration/administration.html"
                       ><span><i class="fa-regular fa-folder-open"></i></span
                       >Administrasi</a
                     >
@@ -116,7 +121,7 @@
                   <li>
                     <a
                       class="dropdown-item nav-dropdown-item"
-                      href="../report/report.html"
+                      href="./pages/report/report.html"
                       ><span><i class="fa-solid fa-bullhorn"></i></span
                       >Pelaporan</a
                     >
@@ -124,7 +129,7 @@
                   <li>
                     <a
                       class="dropdown-item nav-dropdown-item"
-                      href="../family/family.html"
+                      href="./pages/family/family.html"
                       ><span
                         ><i class="fa-solid fa-house-chimney-window"></i></span
                       >Menu keluarga</a
@@ -134,15 +139,15 @@
               </li>
               <li class="nav-item nav-items">
                 <a
-                  class="nav-link navbar-link"
-                  href="../gallery/gallery.html"
+                  class="nav-link navbar-link active"
+                  href="./galery.html"
                   >Galeri</a
                 >
               </li>
               <li class="nav-item nav-items">
                 <a
-                  class="nav-link navbar-link active"
-                  href="../news/news.html"
+                  class="nav-link navbar-link"
+                  href="./pages/news/news.html"
                   >Pengumuman</a
                 >
               </li>
@@ -151,148 +156,134 @@
             <a
               class="btn btn-main-outline-sm w-full-xl"
               role="button"
-              href="../auth/signin.html"
+              href="./pages/auth/signin.html"
               >Masuk</a
             >
           </div>
         </div>
       </nav>
       <!-- end of navigation -->
+
       <!-- header -->
-      <header class="container ps-0">
-        <div class="header-container-back">
-          <button
-            class="btn btn-main-outline-xs"
-            type="button"
-            onclick="goBack()"
-          >
-            <i class="fa-solid fa-arrow-left me-2"></i>Kembali
-          </button>
-        </div>
-      </header>
+      <header
+        class="container"
+        style="padding: 40px 0 40px"
+      ></header>
       <!-- end of header -->
+
       <!-- main -->
       <main>
-        <section class="container container-space pt-2">
-          <div class="row">
-            <!-- left -->
-            <div class="col-12 col-lg-8">
-              <div class="pe-0 pe-lg-2">
-                <figure class="news-image-container">
-                  <img
-                    src="../../assets/img/image-1.jpg"
-                    alt="news-cover"
-                    class="news-image-cover"
+        <!-- get in touch -->
+        <section class="container container-space">
+          <!-- header -->
+          <div class="d-flex align-items-center flex-column mb-4">
+            <p class="head-badge">KONTAK</p>
+            <h2 class="text-center">Hubungi Kami</h2>
+          </div>
+          <div class="contact-container mb-5 row">
+            <div class="col-6">
+              <h5 class="">Kirim Pesan</h5>
+              <p class="">
+                Terima kasih atas minat Anda untuk menghubungi kami. Kami sangat
+                menghargai umpan balik, saran, dan pertanyaan Anda. Silakan
+                gunakan informasi berikut untuk menghubungi kami:
+              </p>
+              <form
+                action="#"
+                class=""
+              >
+                <!-- fullname -->
+                <div class="mb-3">
+                  <label
+                    for="fullname"
+                    class="form-label forms-label"
+                    >Nama Lengkap</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control input-control"
+                    id="fullname"
+                    name="fullname"
+                    placeholder="Masukkan Nama Lengkap"
                   />
-                </figure>
-                <div class="">
-                  <h4 class="mb-3">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Inventore error eaque esse consectetur optio minus, tempora
-                    eveniet
-                  </h4>
-                  <p class="mb-4 fst-italic text-basic">
-                    <span>by Malik Ibrahim</span> . <span>20 Maret 2023</span>
-                  </p>
                 </div>
-                <div class="">
-                  <p class="">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Quaerat odio labore tempore delectus qui. Totam quos ducimus
-                    nemo alias id. Ad beatae perspiciatis necessitatibus hic
-                    nostrum distinctio, corrupti deleniti asperiores?
-                  </p>
-                  <p class="">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Nostrum quas mollitia aut sit, laboriosam optio culpa minima
-                    magni molestiae ad provident quod debitis aspernatur
-                    excepturi ipsa quos voluptatem! Placeat, a. Lorem ipsum
-                    dolor, sit amet consectetur adipisicing elit. Nostrum natus
-                    maxime animi totam adipisci itaque recusandae excepturi
-                    earum expedita ad porro, sunt sequi dolor, alias facere hic
-                    officia distinctio amet.
-                  </p>
-                </div>
-                <p class="">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Impedit dignissimos voluptatibus sapiente magni nobis
-                  molestiae fugiat ducimus maxime sed error. Explicabo
-                  voluptatum modi esse rem aspernatur, optio illo aperiam
-                  nesciunt.
-                </p>
-              </div>
-            </div>
-            <!-- right -->
-            <div class="col-12 col-lg-4">
-              <hr class="divide-related-news" />
-              <div class="ps-0 ps-lg-2">
-                <div class="mb-4">
-                  <h5 class="text-center text-lg-start">Berita Terkait</h5>
-                </div>
-                <div class="related-news-container">
-                  <a
-                    href="./read-news.html"
-                    class="related-news-card"
+                <!-- email -->
+                <div class="mb-3">
+                  <label
+                    for="email"
+                    class="form-label forms-label"
+                    >Email</label
                   >
-                    <figure class="news-image__wrap">
-                      <img
-                        src="../../assets/img/image-7.jpg"
-                        alt="news-1"
-                        class="news-image__photo"
-                      />
-                    </figure>
-                    <p class="news-title-card mb-2">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Deserunt nostrum alias fugit.
-                    </p>
-                    <div class="d-flex align-items-center">
-                      <p class="d-flex align-items-center me-3 mb-0">
-                        <i
-                          class="fa-solid fa-circle-user me-1 d-block fill-gray"
-                        ></i
-                        ><span class="text-sm d-block text-gray">Abimanyu</span>
-                      </p>
-                      <p class="d-flex align-items-center mb-0">
-                        <i class="fa-solid fa-clock me-1 d-block fill-gray"></i
-                        ><span class="text-sm d-block text-gray">50 menit</span>
-                      </p>
-                    </div>
-                  </a>
-                  <a
-                    href="./read-news.html"
-                    class="related-news-card"
-                  >
-                    <figure class="news-image__wrap">
-                      <img
-                        src="../../assets/img/image-7.jpg"
-                        alt="news-1"
-                        class="news-image__photo"
-                      />
-                    </figure>
-                    <p class="news-title-card mb-2">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Deserunt nostrum alias fugit.
-                    </p>
-                    <div class="d-flex align-items-center">
-                      <p class="d-flex align-items-center me-3 mb-0">
-                        <i
-                          class="fa-solid fa-circle-user me-1 d-block fill-gray"
-                        ></i
-                        ><span class="text-sm d-block text-gray">Abimanyu</span>
-                      </p>
-                      <p class="d-flex align-items-center mb-0">
-                        <i class="fa-solid fa-clock me-1 d-block fill-gray"></i
-                        ><span class="text-sm d-block text-gray">50 menit</span>
-                      </p>
-                    </div>
-                  </a>
+                  <input
+                    type="email"
+                    class="form-control input-control"
+                    id="email"
+                    name="email"
+                    placeholder="username@email.com"
+                  />
                 </div>
-              </div>
+                <!-- subject -->
+                <div class="mb-3">
+                  <label
+                    for="subject"
+                    class="form-label forms-label"
+                    >Subjek</label
+                  >
+                  <select
+                    class="form-select select-control"
+                    id="subject"
+                    name="subject"
+                  >
+                    <option selected>Pilih Subjek</option>
+                    <option value="1">Pertanyaan</option>
+                    <option value="2">Saran</option>
+                    <option value="3">Lainnya</option>
+                  </select>
+                </div>
+                <!-- message -->
+                <div class="mb-3">
+                  <label
+                    for="message"
+                    class="form-label forms-label"
+                    >Pesan</label
+                  >
+                  <textarea
+                    class="form-control input-control"
+                    id="message"
+                    rows="3"
+                    placeholder="Masukkan Pesan Anda"
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="btn btn-main-sm w-full-xl"
+                >
+                  Kirim
+                </button>
+              </form>
             </div>
+            <div class="col-6"></div>
+          </div>
+        </section>
+
+        <!-- map -->
+        <section class="container-fluid container-space pb-0">
+          <div class="w-100">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31678.921973903864!2d110.41484533590068!3d-7.0251215486177605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708c02787187c9%3A0x29bcf60b2c20aec!2sUniversitas%20Diponegoro!5e0!3m2!1sid!2sid!4v1688513570084!5m2!1sid!2sid"
+              width="100"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              class="w-100 pb-0 mb-0"
+            ></iframe>
           </div>
         </section>
       </main>
       <!-- end of main -->
+
       <!-- footer -->
       <footer class="big-footer">
         <section class="container">
@@ -301,12 +292,12 @@
             <div class="col-md-4">
               <div class="footer-top__left">
                 <a
-                  href="../../index.html"
+                  href="./index.html"
                   class="footer-logo-link"
                 >
                   <figure class="footer-logo-wrapper">
                     <img
-                      src="../../assets/svg/warga-letter-logo.svg"
+                      src="./assets/svg/warga-letter-logo.svg"
                       alt="warga-letter-icon"
                     />
                   </figure>
@@ -332,20 +323,22 @@
                 <div class="footer-menu-wrapper">
                   <ul class="ps-0 ps-md-5">
                     <li class="footer-menu__header">Warga</li>
-                    <li><a href="../news/news.html">Pengumuman</a></li>
-                    <li><a href="../gallery/gallery.html">Galeri</a></li>
+                    <li><a href="./pages/news/news.html">Pengumuman</a></li>
+                    <li><a href="./galery.html">Galeri</a></li>
                   </ul>
                 </div>
                 <div class="footer-menu-wrapper">
                   <ul class="ps-0 ps-md-5">
                     <li class="footer-menu__header">Layanan</li>
                     <li>
-                      <a href="../administration/administration.html"
+                      <a href="./pages/administration/administration.html"
                         >Pengajuan Administrasi</a
                       >
                     </li>
-                    <li><a href="../report/report.html">Pelaporan</a></li>
-                    <li><a href="../family/family.html">Menu Keluarga</a></li>
+                    <li><a href="./pages/report/report.html">Pelaporan</a></li>
+                    <li>
+                      <a href="./pages/family/family.html">Menu Keluarga</a>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -366,13 +359,6 @@
         </section>
       </footer>
       <!-- end of footer -->
-
-      <!-- scroll to top button -->
-      <div id="scroll-to-top">
-        <div class="btn btn-main shadow">
-          <i class="fa-solid fa-arrow-up"></i>
-        </div>
-      </div>
     </div>
 
     <!-- offcanvas navbar mobile -->
@@ -386,9 +372,9 @@
         <a
           id="offcanvasTopLabel"
           class="navbar-brand-mobile"
-          href="../../index.html"
+          href="./index.html"
           ><img
-            src="../../assets/svg/warga-letter-logo.svg"
+            src="./assets/svg/warga-letter-logo.svg"
             alt="warga-letter-icon"
             class="h-100"
         /></a>
@@ -420,25 +406,15 @@
               <div class="">
                 <ul class="list-nav-collapse">
                   <li class="list-nav-collapse-item">
-                    <a
-                      href="../administration/administration.html"
-                      class=""
+                    <a href="./pages/administration/administration.html"
                       >Administrasi</a
                     >
                   </li>
                   <li class="list-nav-collapse-item">
-                    <a
-                      href="../report/report.html"
-                      class=""
-                      >Pelaporan</a
-                    >
+                    <a href="./pages/report/report.html">Pelaporan</a>
                   </li>
                   <li class="list-nav-collapse-item">
-                    <a
-                      href="../family/family.html"
-                      class=""
-                      >Menu Keluarga</a
-                    >
+                    <a href="./pages/family/family.html">Menu Keluarga</a>
                   </li>
                 </ul>
               </div>
@@ -446,21 +422,21 @@
           </li>
           <li class="list-nav-link-item">
             <a
-              href="../gallery/gallery.html"
-              class=""
+              href="./galery.html"
+              class="active"
               >Galeri</a
             >
           </li>
           <li class="list-nav-link-item">
             <a
-              href="./news.html"
-              class="active"
+              href="./pages/news/news.html"
+              class=""
               >Pengumuman</a
             >
           </li>
         </ul>
         <a
-          href="../auth/signin.html"
+          href="./pages/auth/signin.html"
           class="btn btn-main w-100 shadow"
           >Masuk</a
         >
@@ -501,13 +477,21 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <!-- datatables -->
+    <script
+      type="text/javascript"
+      src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"
+    ></script>
+    <!-- fancybox -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <!-- custom -->
-    <script src="../../assets/js/scripts.js"></script>
-    <script>
-      //   onclick back to previous page
-      function goBack() {
-        window.history.back();
-      }
-    </script>
+    <script src="./assets/js/scripts.js"></script>
+
+    <!-- script internal -->
+    <script></script>
   </body>
 </html>
