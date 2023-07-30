@@ -868,3 +868,9 @@
 .nav-collapse.active {
   color: var(--primary-700);
 }
+.nav-link.piils-btn.logout-btn:hover {
+  background: #ffefef !important;
+}
+.list-nav-link-item .logout-btn:hover {
+  color: #de5151;
+}
