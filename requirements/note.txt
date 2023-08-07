@@ -12,4 +12,7 @@
 - ✅finishing navbar
 - ✅finishing look input file
 - ✅finishing homepage
+- ✅Button Logout
+- Flash data CRUD
+- Fixing Change Profile Picture 
 - Content Real!
