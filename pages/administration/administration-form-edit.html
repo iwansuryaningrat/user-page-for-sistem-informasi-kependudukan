@@ -677,21 +677,22 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum deserunt ut mole
           },
           messages: {
             kategori: {
-              required: 'Kategori tidak boleh kosong.',
+              required:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Kategori tidak boleh kosong.',
             },
             keperluan: {
-              required: 'Laporan tidak boleh kosong.',
+              required:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Laporan tidak boleh kosong.',
             },
             deskripsi: {
-              required: 'Deskripsi laporan tidak boleh kosong.',
+              required:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Deskripsi laporan tidak boleh kosong.',
             },
             berkas: {
-              required: 'Berkas tidak boleh kosong.',
+              required:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Berkas tidak boleh kosong.',
             },
           },
-        });
-        $('#adminFormEditButton').on('click', () => {
-          console.log($('#adminFormEdit').valid());
         });
       });
 

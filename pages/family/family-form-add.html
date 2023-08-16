@@ -956,49 +956,70 @@
           },
           messages: {
             nik: {
-              required: 'NIK tidak boleh kosong.',
-              number: 'NIK harus berupa angka.',
-              minlength: 'NIK harus berjumlah 16 digit.',
-              maxlength: 'NIK harus berjumlah 16 digit.',
+              required:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>NIK tidak boleh kosong.',
+              number:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>NIK harus berupa angka.',
+              minlength:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>NIK harus berjumlah 16 digit.',
+              maxlength:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>NIK harus berjumlah 16 digit.',
             },
             nama: {
-              required: 'Nama tidak boleh kosong.',
-              alphabetOnly: 'Nama harus berupa huruf.',
+              required:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Nama tidak boleh kosong.',
+              alphabetOnly:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Nama harus berupa huruf.',
             },
             jenis_kelamin: {
-              required: 'Jenis kelamin tidak boleh kosong.',
+              required:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Jenis kelamin tidak boleh kosong.',
             },
             tempat_lahir: {
-              required: 'Tempat lahir tidak boleh kosong.',
+              required:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Tempat lahir tidak boleh kosong.',
             },
             tanggal_lahir: {
-              required: 'Tanggal lahir tidak boleh kosong.',
+              required:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Tanggal lahir tidak boleh kosong.',
             },
             status_perkawinan: {
-              required: 'Status perkawinan tidak boleh kosong.',
+              required:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Status perkawinan tidak boleh kosong.',
             },
             agama: {
-              required: 'Agama tidak boleh kosong.',
+              required:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Agama tidak boleh kosong.',
             },
             pendidikan: {
-              required: 'Pendidikan tidak boleh kosong.',
+              required:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Pendidikan tidak boleh kosong.',
             },
             pekerjaan: {
-              required: 'Pekerjaan tidak boleh kosong.',
+              required:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Pekerjaan tidak boleh kosong.',
             },
             no_hp: {
-              required: 'No. HP tidak boleh kosong.',
-              number: 'No. HP harus berupa angka.',
-              minlength: 'No. HP harus berjumlah 10-13 digit.',
-              maxlength: 'No. HP harus berjumlah 10-13 digit.',
+              required:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>No. HP tidak boleh kosong.',
+              number:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>No. HP harus berupa angka.',
+              minlength:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>No. HP harus berjumlah 10-13 digit.',
+              maxlength:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>No. HP harus berjumlah 10-13 digit.',
             },
             email: {
-              required: 'Email tidak boleh kosong.',
-              email: 'Email tidak valid.',
+              required:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Email tidak boleh kosong.',
+              email:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Email tidak valid.',
             },
             foto: {
-              required: 'Foto tidak boleh kosong.',
-              extension: 'Foto harus berupa file gambar.',
+              required:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Foto tidak boleh kosong.',
+              extension:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Foto harus berupa file gambar.',
             },
           },
           errorPlacement: function (error, element) {
@@ -1008,9 +1029,6 @@
               error.insertAfter(element);
             }
           },
-        });
-        $('#familyFormAddButton').on('click', () => {
-          console.log($('#familyFormAdd').valid());
         });
       });
 

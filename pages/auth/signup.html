@@ -463,34 +463,44 @@
           },
           messages: {
             nik: {
-              required: 'NIK tidak boleh kosong.',
-              number: 'NIK harus berupa angka.',
+              required:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>NIK tidak boleh kosong.',
+              number:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>NIK harus berupa angka.',
             },
             kk: {
-              required: 'No. KK tidak boleh kosong.',
-              number: 'No. KK harus berupa angka.',
+              required:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>No. KK tidak boleh kosong.',
+              number:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>No. KK harus berupa angka.',
             },
             nama: {
-              required: 'Nama tidak boleh kosong.',
-              alphabetOnly: 'Nama harus berupa huruf.',
+              required:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Nama tidak boleh kosong.',
+              alphabetOnly:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Nama harus berupa huruf.',
             },
             email: {
-              required: 'Email tidak boleh kosong.',
-              email: 'Email tidak valid.',
+              required:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Email tidak boleh kosong.',
+              email:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Email tidak valid.',
             },
             password: {
-              required: 'Password tidak boleh kosong.',
-              minlength: 'Password minimal 8 karakter.',
-              pattern: 'Password harus mengandung huruf dan angka.',
+              required:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Password tidak boleh kosong.',
+              minlength:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Password minimal 8 karakter.',
+              pattern:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Password harus mengandung huruf dan angka.',
             },
             confirmPassword: {
-              required: 'Konfirmasi Password tidak boleh kosong.',
-              equalTo: 'Konfirmasi Password harus sama dengan Password.',
+              required:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Konfirmasi Password tidak boleh kosong.',
+              equalTo:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Konfirmasi Password harus sama dengan Password.',
             },
           },
-        });
-        $('#signupFormButton').on('click', () => {
-          console.log($('#signupForm').valid());
         });
       });
 

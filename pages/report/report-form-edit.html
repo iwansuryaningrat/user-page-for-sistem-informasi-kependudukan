@@ -680,21 +680,22 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis itaque odit o
           },
           messages: {
             nama_terlapor: {
-              required: 'Nama terlapor tidak boleh kosong.',
+              required:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Nama terlapor tidak boleh kosong.',
             },
             kategori: {
-              required: 'Kategori tidak boleh kosong.',
+              required:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Kategori tidak boleh kosong.',
             },
             laporan: {
-              required: 'Laporan tidak boleh kosong.',
+              required:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Laporan tidak boleh kosong.',
             },
             deskripsi_laporan: {
-              required: 'Deskripsi laporan tidak boleh kosong.',
+              required:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Deskripsi laporan tidak boleh kosong.',
             },
           },
-        });
-        $('#reportFormEditButton').on('click', () => {
-          console.log($('#reportFormEdit').valid());
         });
       });
 

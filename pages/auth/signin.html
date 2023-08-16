@@ -371,15 +371,12 @@
           },
           messages: {
             email: {
-              required: 'Email atau NIK tidak boleh kosong.',
+              required: '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Email atau NIK tidak boleh kosong.',
             },
             password: {
-              required: 'Password tidak boleh kosong.',
+              required: '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Password tidak boleh kosong.',
             },
           },
-        });
-        $('#loginFormButton').on('click', () => {
-          console.log($('#loginForm').valid());
         });
       });
 

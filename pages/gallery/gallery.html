@@ -774,21 +774,22 @@
           },
           messages: {
             judul: {
-              required: 'Judul tidak boleh kosong',
+              required:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Judul tidak boleh kosong',
             },
             kategori: {
-              required: 'Kategori tidak boleh kosong',
+              required:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Kategori tidak boleh kosong',
             },
             deskripsi: {
-              required: 'Deskripsi tidak boleh kosong',
+              required:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Deskripsi tidak boleh kosong',
             },
             thumbnail: {
-              required: 'Thumbnail tidak boleh kosong',
+              required:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Thumbnail tidak boleh kosong',
             },
           },
-        });
-        $('#formAddGalleryButton').on('click', () => {
-          console.log($('#formAddGallery').valid());
         });
       });
     </script>

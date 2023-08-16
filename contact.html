@@ -666,22 +666,19 @@
           },
           messages: {
             namaLengkap: {
-              required: 'Nama lengkap tidak boleh kosong.',
+              required: '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Nama lengkap tidak boleh kosong.',
             },
             email: {
-              required: 'Email tidak boleh kosong.',
-              email: 'Email tidak valid.',
+              required: '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Email tidak boleh kosong.',
+              email: '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Email tidak valid.',
             },
             subjek: {
-              required: 'Subjek tidak boleh kosong.',
+              required: '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Subjek tidak boleh kosong.',
             },
             pesan: {
-              required: 'Pesan tidak boleh kosong.',
+              required: '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Pesan tidak boleh kosong.',
             },
           },
-        });
-        $('#contactFormButton').on('click', () => {
-          console.log($('#contactForm').valid());
         });
       });
     </script>
