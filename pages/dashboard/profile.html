@@ -280,14 +280,14 @@
               ><i class="fa-solid fa-id-badge me-2"></i>Profile</a
             >
             <!-- logout -->
-            <a
+            <button
               class="btn btn-logout-sm w-full-xl d-flex align-items-center justify-content-center"
               role="button"
-              href="../../index.html"
-              title="logout button"
+              onclick="logout()"
+              title="Logout Button"
             >
               <i class="fa-solid fa-sign-out"></i>
-            </a>
+            </button>
           </div>
         </div>
       </nav>
@@ -365,8 +365,8 @@
                 <button
                   class="nav-link piils-btn logout-btn"
                   type="button"
+                  onclick="logout()"
                   role="tab"
-                  onclick="location.href='../../index.html'"
                 >
                   Logout
                 </button>
@@ -1136,11 +1136,13 @@
           </li>
           <!-- logout -->
           <li class="list-nav-link-item">
-            <a
-              href="../../index.html"
-              class="logout-btn"
-              >Logout</a
+            <button
+              onclick="logout()"
+              role="link"
+              class="btn-anchor logout-btn"
             >
+              Logout
+            </button>
           </li>
         </ul>
         <a
@@ -1185,7 +1187,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <!-- custom -->
+    <!-- sweet alert 2 -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.20/sweetalert2.min.js"
+      integrity="sha512-2AOp8GEFv1X43dZpYqOp34WD+skmM18yOrCxS/S1Mh6VShz7uxlPhKmA98fsPrE7MMMtZgjshiMHKmzWtZR5uA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="../../assets/js/scripts.js"></script>
 
     <!-- internal script -->
