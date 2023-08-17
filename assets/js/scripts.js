@@ -45,3 +45,29 @@ $(document).ready(function () {
     }
   });
 });
+
+const logout = () => {
+  Swal.fire({
+    title: 'Apakah anda yakin?',
+    text: 'Anda akan keluar dari akun ini!',
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: '#d33',
+    cancelButtonColor: '#3085d6',
+    confirmButtonText: 'Ya, Keluar!',
+    cancelButtonText: 'Batal',
+  }).then((result) => {
+    if (result.isConfirmed) {
+      setTimeout(function () {
+        window.location.href = '/logout';
+      }, 3000);
+      Swal.fire(
+        'Berhasil!',
+        'Anda telah keluar dari akun ini.',
+        'success'
+      ).then(function () {
+        window.location.href = '/logout';
+      });
+    }
+  });
+};
