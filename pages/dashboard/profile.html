@@ -7,6 +7,74 @@
       name="viewport"
       content="width=device-width, initial-scale=1"
     />
+    <meta
+      name="description"
+      content="Selamat datang di Website Warga! Kami adalah platform pengelolaan data keluarga untuk desa. Daftar, perbarui informasi, dan akses layanan komunitas kami di sini."
+    />
+    <meta
+      name="keywords"
+      content="website warga, data keluarga, layanan komunitas, pendaftaran penduduk, informasi desa"
+    />
+    <meta
+      name="author"
+      content="Warga"
+    />
+    <meta
+      name="robots"
+      content="index, follow"
+    />
+    <link
+      rel="canonical"
+      href="https://www.warga.com"
+    />
+    <meta
+      name="revised"
+      content="10 Agustus 2023"
+    />
+    <meta
+      name="language"
+      content="Indonesia"
+    />
+    <meta
+      name="geo.region"
+      content="ID"
+    />
+    <meta
+      name="geo.placename"
+      content="Jakarta"
+    />
+    <meta
+      name="geo.position"
+      content="-6.2088, 106.8456"
+    />
+    <meta
+      name="msapplication-navbutton-color"
+      content="#ffffff"
+    />
+    <link
+      rel="sitemap"
+      type="application/xml"
+      title="Sitemap"
+      href="https://www.warga.com/sitemap.xml"
+    />
+
+    <!-- Open Graph Meta Tags -->
+    <meta
+      property="og:title"
+      content="Website Warga - Pengelolaan Data Keluarga untuk Desa"
+    />
+    <meta
+      property="og:description"
+      content="Selamat datang di Website Warga! Kami adalah platform pengelolaan data keluarga untuk desa. Daftar, perbarui informasi, dan akses layanan komunitas kami di sini."
+    />
+    <meta
+      property="og:image"
+      content="/homepage/public/apple-touch-icon-180x180.png"
+    />
+    <meta
+      property="og:url"
+      content="https://www.warga.com"
+    />
 
     <!-- Styles -->
     <!-- font -->
@@ -38,6 +106,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- sweet alert 2 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.20/sweetalert2.min.css"
+      integrity="sha512-yX1R8uWi11xPfY7HDg7rkLL/9F1jq8Hyiz8qF4DV2nedX4IVl7ruR2+h3TFceHIcT5Oq7ooKi09UZbI39B7ylw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- custom -->
     <link
       rel="stylesheet"
@@ -53,6 +129,47 @@
       rel="shortcut icon"
       href="../../public/favicon.ico"
       type="image/x-icon"
+    />
+    <!-- apple touch icon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="../../public/apple-touch-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="../../public/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="../../public/apple-touch-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="../../public/apple-touch-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="../../public/apple-touch-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="../../public/apple-touch-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="../../public/apple-touch-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../../public/apple-touch-icon-180x180.png"
     />
     <!-- title -->
     <title>Dashboard Mahmudin | Warga Site</title>
@@ -92,10 +209,7 @@
               aria-controls="offcanvasTop"
               title="Menu"
             >
-              <i
-                class="fa-solid fa-bars"
-                style="font-size: 1.25rem"
-              ></i>
+              <i class="fa-solid fa-bars text-xl"></i>
             </button>
           </div>
           <!-- link -->
@@ -166,14 +280,14 @@
               ><i class="fa-solid fa-id-badge me-2"></i>Profile</a
             >
             <!-- logout -->
-            <a
+            <button
               class="btn btn-logout-sm w-full-xl d-flex align-items-center justify-content-center"
               role="button"
-              href="../../index.html"
-              style="height: 41px; margin-left: 12px"
+              onclick="logout()"
+              title="Logout Button"
             >
               <i class="fa-solid fa-sign-out"></i>
-            </a>
+            </button>
           </div>
         </div>
       </nav>
@@ -251,7 +365,8 @@
                 <button
                   class="nav-link piils-btn logout-btn"
                   type="button"
-                  onclick="location.href='../../index.html'"
+                  onclick="logout()"
+                  role="tab"
                 >
                   Logout
                 </button>
@@ -861,8 +976,8 @@
                   </figure>
                 </a>
                 <p class="text-basic">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. In
-                  assumenda.<br />
+                  Selamat datang di Website Warga! Kami adalah platform
+                  pengelolaan data keluarga untuk desa.<br />
                   Jl. Raya Kebayoran Lama Bl A-5/194, DKI Jakarta, Kota Jakarta
                   12240
                 </p>
@@ -1021,11 +1136,13 @@
           </li>
           <!-- logout -->
           <li class="list-nav-link-item">
-            <a
-              href="../../index.html"
-              class="logout-btn"
-              >Logout</a
+            <button
+              onclick="logout()"
+              role="link"
+              class="btn-anchor logout-btn"
             >
+              Logout
+            </button>
           </li>
         </ul>
         <a
@@ -1070,7 +1187,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <!-- custom -->
+    <!-- sweet alert 2 -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.20/sweetalert2.min.js"
+      integrity="sha512-2AOp8GEFv1X43dZpYqOp34WD+skmM18yOrCxS/S1Mh6VShz7uxlPhKmA98fsPrE7MMMtZgjshiMHKmzWtZR5uA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="../../assets/js/scripts.js"></script>
 
     <!-- internal script -->
@@ -1101,23 +1224,28 @@
           },
           messages: {
             nama_depan: {
-              required: 'Nama depan tidak boleh kosong',
-              alphabetOnly: 'Nama depan hanya boleh berisi huruf',
+              required:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Nama depan tidak boleh kosong',
+              alphabetOnly:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Nama depan hanya boleh berisi huruf',
             },
             nama_belakang: {
-              required: 'Nama belakang tidak boleh kosong',
-              alphabetOnly: 'Nama belakang hanya boleh berisi huruf',
+              required:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Nama belakang tidak boleh kosong',
+              alphabetOnly:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Nama belakang hanya boleh berisi huruf',
             },
             nik: {
-              required: 'NIK tidak boleh kosong',
-              number: 'NIK hanya boleh berisi angka',
-              minlength: 'NIK harus berisi 16 angka',
-              maxlength: 'NIK harus berisi 16 angka',
+              required:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>NIK tidak boleh kosong',
+              number:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>NIK hanya boleh berisi angka',
+              minlength:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>NIK harus berisi 16 angka',
+              maxlength:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>NIK harus berisi 16 angka',
             },
           },
-        });
-        $('#detailProfileFormButton').on('click', () => {
-          console.log($('#detailProfileForm').valid());
         });
         // data pribadi
         $('#profileForm').validate({
@@ -1171,49 +1299,68 @@
           },
           messages: {
             no_hp: {
-              required: 'No. HP tidak boleh kosong.',
-              number: 'No. HP harus berupa angka.',
-              minlength: 'No. HP harus berjumlah 10-13 digit.',
-              maxlength: 'No. HP harus berjumlah 10-13 digit.',
+              required:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>No. HP tidak boleh kosong.',
+              number:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>No. HP harus berupa angka.',
+              minlength:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>No. HP harus berjumlah 10-13 digit.',
+              maxlength:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>No. HP harus berjumlah 10-13 digit.',
             },
             jenis_kelamin: {
-              required: 'Jenis kelamin tidak boleh kosong.',
+              required:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Jenis kelamin tidak boleh kosong.',
             },
             status: {
-              required: 'Status tidak boleh kosong.',
+              required:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Status tidak boleh kosong.',
             },
             status_perkawinan: {
-              required: 'Status perkawinan tidak boleh kosong.',
+              required:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Status perkawinan tidak boleh kosong.',
             },
             tempat_lahir: {
-              required: 'Tempat lahir tidak boleh kosong.',
+              required:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Tempat lahir tidak boleh kosong.',
             },
             tanggal_lahir: {
-              required: 'Tanggal lahir tidak boleh kosong.',
+              required:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Tanggal lahir tidak boleh kosong.',
             },
             alamat: {
-              required: 'Alamat tidak boleh kosong.',
+              required:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Alamat tidak boleh kosong.',
             },
             provinsi: {
-              required: 'Provinsi tidak boleh kosong.',
+              required:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Provinsi tidak boleh kosong.',
             },
             kota_kabupaten: {
-              required: 'Kota/Kabupaten tidak boleh kosong.',
+              required:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Kota/Kabupaten tidak boleh kosong.',
             },
             kodepos: {
-              required: 'Kodepos tidak boleh kosong.',
-              number: 'Kodepos harus berupa angka.',
-              minlength: 'Kodepos harus berjumlah 5 digit.',
-              maxlength: 'Kodepos harus berjumlah 5 digit.',
+              required:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Kodepos tidak boleh kosong.',
+              number:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Kodepos harus berupa angka.',
+              minlength:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Kodepos harus berjumlah 5 digit.',
+              maxlength:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Kodepos harus berjumlah 5 digit.',
             },
             agama: {
-              required: 'Agama tidak boleh kosong.',
+              required:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Agama tidak boleh kosong.',
             },
             pendidikan: {
-              required: 'Pendidikan tidak boleh kosong.',
+              required:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Pendidikan tidak boleh kosong.',
             },
             pekerjaan: {
-              required: 'Pekerjaan tidak boleh kosong.',
+              required:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Pekerjaan tidak boleh kosong.',
             },
           },
           errorPlacement: function (error, element) {
@@ -1223,9 +1370,6 @@
               error.insertAfter(element);
             }
           },
-        });
-        $('#profileFormButton').on('click', () => {
-          console.log($('#profileForm').valid());
         });
         // ubah kata sandi
         $('#changePasswordForm').validate({
@@ -1245,23 +1389,24 @@
           },
           messages: {
             password_lama: {
-              required: 'Password lama tidak boleh kosong.',
+              required:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Password lama tidak boleh kosong.',
             },
             password_baru: {
-              required: 'Password baru tidak boleh kosong.',
-              minlength: 'Password baru harus berjumlah 8-16 karakter.',
+              required:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Password baru tidak boleh kosong.',
+              minlength:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Password baru harus berjumlah 8-16 karakter.',
             },
             konfirmasi_password_baru: {
-              required: 'Konfirmasi password baru tidak boleh kosong.',
+              required:
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Konfirmasi password baru tidak boleh kosong.',
               minlength:
-                'Konfirmasi password baru harus berjumlah 8-16 karakter.',
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Konfirmasi password baru harus berjumlah 8-16 karakter.',
               equalTo:
-                'Konfirmasi password baru harus sama dengan password baru.',
+                '<i class="fas fa-exclamation-circle mr-6 text-sm icon-error"></i>Konfirmasi password baru harus sama dengan password baru.',
             },
           },
-        });
-        $('#changePasswordFormButton').on('click', () => {
-          console.log($('#changePasswordForm').valid());
         });
 
         // CHANGE PASSWORD TAB
